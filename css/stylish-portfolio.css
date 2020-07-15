@@ -93,16 +93,18 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/beach-unsplash.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/wall.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #5c4f4f;
 }
 
 .masthead h1 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+
 }
 
 @media (min-width: 992px) {
@@ -123,7 +125,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #e6dce5;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -139,7 +141,7 @@ h6 {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #af6e4e;
   padding: 15px;
 }
 
@@ -165,7 +167,7 @@ h6 {
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #fff;
+  color: #af6e4e;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -186,14 +188,14 @@ h6 {
   width: 50px;
   height: 50px;
   text-align: center;
-  color: #fff;
+  color: #d2a3a9;
   background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
   z-index: 999;
 }
 
 .menu-toggle:focus, .menu-toggle:hover {
-  color: #fff;
+  color: #e6dce5;
 }
 
 .menu-toggle:hover {
@@ -332,14 +334,15 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #d2a3a9 !important;
+  border-color: #ebc3c1 !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #e6dce5 !important;
+  border-color: #d2a3a9 !important;
+  color: #d2a3a9 !important;
 }
 
 .btn-secondary {
@@ -363,7 +366,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #ecad8f !important;
 }
 
 .text-primary {
@@ -372,4 +375,15 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
