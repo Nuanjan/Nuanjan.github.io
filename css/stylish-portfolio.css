@@ -374,11 +374,13 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 .noon-name {
+  text-align: center !important;
   color: #fcf1f0;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #2c1608;
 }
 .noon-sub {
+  text-align: center !important;
   color: #f8e0c8;
 }
 .noon-logo-container {
