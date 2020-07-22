@@ -123,7 +123,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #af6e4e;
+  background: #a45a52;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -332,7 +332,7 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #ebc3c1 !important;
+  background-color: #aa767c !important;
   border-color: #e6dce5 !important;
   color: #fff !important;
 }
@@ -374,14 +374,16 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 .noon-name {
-  color: #f1e0b0;
+  color: #fcf1f0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2c1608;
 }
 .noon-sub {
-  color: #f1cdb0;
+  color: #f8e0c8;
 }
 .noon-logo-container {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   float: left;
 }
 .noon-logo {
@@ -393,6 +395,7 @@ a:hover, a:focus, a:active {
 .intro {
   font-size: 20px !important;
   text-align: center;
+  color:#a45a52;
 }
 .noon-intro {
   text-align: center;
