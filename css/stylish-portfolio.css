@@ -413,3 +413,67 @@ a:hover, a:focus, a:active {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+@media(max-width: 375px) {
+  .noon-logo-container {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+  }
+  .intro{
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .zoom-wrap {
+    width: 80%;
+  }
+  .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 5px auto;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+  .portfolio-item {
+    width: 80%;
+  }
+  .noon-intro {
+    font-size: 18px;
+    text-align: center;
+  }
+  .masthead {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/noon-main.png");
+    background-position: 38% 62%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .noon-name {
+    font-size: 20px;
+    text-align: right;
+  }
+  .noon-sub {
+    text-align: right;
+    font-size: 14px;
+
+  }
+  .skill-head {
+    font-size: 24px;
+    margin: 0 auto !important;
+  }
+}
