@@ -386,7 +386,7 @@ a:hover, a:focus, a:active {
 .noon-logo-container {
   width: 250px;
   height: 250px;
-  float: left;
+  margin: 10px auto;
 }
 .noon-logo {
   max-width: 100%;
@@ -421,10 +421,7 @@ a:hover, a:focus, a:active {
     height: 150px;
     margin: 5px auto;
   }
-  .intro{
-    display: flex;
-    flex-direction: column;
-  }
+
   .intro-p {
     width: 80%;
     text-align: center;
