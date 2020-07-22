@@ -123,7 +123,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #af6e4e;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -313,33 +313,33 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #d2a3a9;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #e6dce5;
   text-decoration: none;
 }
 
 a {
-  color: #1D809F;
+  color: #d2a3a9;
 }
 
 a:hover, a:focus, a:active {
-  color: #155d74;
+  color: #d2a3a9;
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #ebc3c1 !important;
+  border-color: #e6dce5 !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #d2a3a9 !important;
+  border-color: #e6dce5 !important;
 }
 
 .btn-secondary {
@@ -363,7 +363,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #d2a3a9 !important;
 }
 
 .text-primary {
@@ -372,4 +372,41 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+.noon-name {
+  color: #f1e0b0;
+}
+.noon-sub {
+  color: #f1cdb0;
+}
+.noon-logo-container {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+.noon-logo {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.intro {
+  font-size: 20px !important;
+  text-align: center;
+}
+.noon-intro {
+  text-align: center;
+}
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
