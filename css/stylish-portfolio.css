@@ -513,3 +513,21 @@ a:hover, a:focus, a:active {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.link-wrap {
+  padding: 5px;
+  width: 98%;
+  background-color: #d2a3a9;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  border-radius: 10px;
+  justify-content: space-around;
+  font-size: 18px;
+}
+.link-wrap:hover {
+  background-color: #fcf1f0;
+  color:#a45a52;
+}
+a {
+  color: #fcf1f0;
+}
