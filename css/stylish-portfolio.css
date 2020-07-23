@@ -238,7 +238,7 @@ h6 {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
+  background-color: rgba(255, 217, 209, 0.2) !important;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -246,7 +246,7 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
+  color: #65350f;
   margin: auto 2rem 2rem;
 }
 
@@ -290,7 +290,7 @@ h6 {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(255, 235, 228, 0.8)!important;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -475,4 +475,41 @@ a:hover, a:focus, a:active {
     font-size: 24px;
     margin: 0 auto !important;
   }
+}
+.container-test {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.container-test:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
