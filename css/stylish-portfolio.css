@@ -426,6 +426,7 @@ a:hover, a:focus, a:active {
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    color: #a45a52;
   }
   .zoom-wrap {
     width: 80%;
@@ -449,6 +450,7 @@ a:hover, a:focus, a:active {
   .noon-intro {
     font-size: 18px;
     text-align: center;
+    color: #a45a52;
   }
   .masthead {
     position: relative;
