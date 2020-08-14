@@ -480,12 +480,17 @@ a:hover, a:focus, a:active {
     font-size: 24px;
     margin: 0 auto !important;
   }
-  .caption-content: {
-    font-size: 1vw;
-  }
-  .caption: {
-    overflow: scroll;
-  }
+.caption-content: {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mb-0 {
+  height: 200%;
+    background: #f5f9fa;
+    border: 2px solid #eaf2f4;
+    padding: 10px;
+}
 }
 .container-test {
   position: relative;
