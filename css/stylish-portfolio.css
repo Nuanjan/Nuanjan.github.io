@@ -420,6 +420,11 @@ a:hover, a:focus, a:active {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+@media(max-width: 769px) {
+.portfolio-item .caption {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+}
 @media(max-width: 375px) {
   .noon-logo-container {
     width: 150px;
