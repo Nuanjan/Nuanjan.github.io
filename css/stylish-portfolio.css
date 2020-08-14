@@ -480,14 +480,16 @@ a:hover, a:focus, a:active {
     font-size: 24px;
     margin: 0 auto !important;
   }
-.caption-content: {
-  width: 100%;
-  overflow: auto;
+  .caption {
+    xwidth: 100%;
+    overflow: auto;
+  }
+.caption-content {
   -webkit-overflow-scrolling: touch;
 }
 .mb-0 {
   height: 200%;
-    background: #f5f9fa;
+    background: rgba(255, 255, 255, 0.5);
     border: 2px solid #eaf2f4;
     padding: 10px;
 }
