@@ -420,12 +420,32 @@ a:hover, a:focus, a:active {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
-@media(max-width: 769px) {
+@media(min-width: 376px) and (max-width: 769px) {
 .portfolio-item .caption {
-  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-color: rgba(255, 245, 245, 0.9) !important;
+}
+.masthead {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/noon-main.png");
+  background-position: 40% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 }
 @media(max-width: 375px) {
+  .portfolio-item .caption .caption-content {
+  width: 100%;
+  margin: 5px;
+  }
+  .icon-skill {
+    height: 60px;
+    width: 60px;
+  }
   .noon-logo-container {
     width: 150px;
     height: 150px;
@@ -441,11 +461,11 @@ a:hover, a:focus, a:active {
     width: 80%;
   }
   .zoom {
-    padding: 50px;
+    padding: 60px;
     transition: transform .2s;
     width: 100px;
     height: 100px;
-    margin: 5px auto;
+    margin: 10px auto;
   }
 
   .zoom:hover {
@@ -493,10 +513,12 @@ a:hover, a:focus, a:active {
   -webkit-overflow-scrolling: touch;
 }
 .mb-0 {
-  height: 200%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     border: 2px solid #eaf2f4;
     padding: 10px;
+}
+.h2 {
+  font-size: 24px !important;
 }
 }
 .container-test {
