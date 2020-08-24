@@ -50,9 +50,8 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Map */
-.map {
-  height: 30rem;
+.img-fluid {
+  opacity: 23%;
 }
 
 @media (max-width: 992px) {
@@ -251,7 +250,7 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content {
-  color: #65350f;
+  color: #231709;
   margin: auto 2rem 2rem;
 }
 
@@ -261,7 +260,6 @@ h6 {
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
   font-size: 1.2rem;
 }
 
@@ -279,8 +277,6 @@ h6 {
   }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
     margin-bottom: 2rem;
   }
   .portfolio-item img {
@@ -296,11 +292,10 @@ h6 {
   }
   .portfolio-item:hover .caption {
     background-color: rgba(255, 235, 228, 0.8)!important;
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
   }
 }
-
 .map iframe {
   height: 100%;
   width: 100%;
