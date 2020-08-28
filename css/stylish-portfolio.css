@@ -415,9 +415,9 @@ a:hover, a:focus, a:active {
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
-@media(min-width: 376px) and (max-width: 769px) {
+@media(min-width: 415px) and (max-width: 1024px) {
 .portfolio-item .caption {
-  background-color: rgba(255, 245, 245, 0.9) !important;
+  background-color: rgba(255, 245, 245, 0.7) !important;
 }
 .masthead {
   position: relative;
@@ -432,7 +432,7 @@ a:hover, a:focus, a:active {
   background-size: cover;
 }
 }
-@media(max-width: 375px) {
+@media(max-width: 414px) {
   .portfolio-item .caption .caption-content {
   width: 100%;
   margin: 5px;
