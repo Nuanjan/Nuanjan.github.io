@@ -97,8 +97,8 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/noon-main.png");
-  background-position: center;
+  background: url("../img/noon-main.png");
+  background-position: 0px -80px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -109,13 +109,34 @@ h6 {
   padding: 0;
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
-  .masthead h1 {
-    font-size: 5.5rem;
-  }
+/* contact form style */
+.contact-wrapper {
+  background-color: #a45a52;
+
+}
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+
+}
+.form-control {
+  width: 600px;
+  margin: 5px auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color:#ffff;
+}
+form .submit-btn {
+  background: #ffff;
+  border-color: transparent;
+  color: #a45a52;
+  font-size: 20px;
+}
+form .submit:hover {
+  background-color: #d2a3a9;
+  cursor: pointer;
 }
 
 /* Side Menu */
