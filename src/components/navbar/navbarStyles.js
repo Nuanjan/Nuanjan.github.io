@@ -19,6 +19,7 @@ export const StyledMenu = styled.nav`
   transition: all 0.5s ease-in-out;
   position: sticky;
   z-index: 10;
+  height: 900px;
 
   a {
     font-size: 2rem;
@@ -26,7 +27,7 @@ export const StyledMenu = styled.nav`
     padding: 1.5rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #e0dee9;
+    color: #f5f6de;
     text-decoration: none;
     transition: color 0.3s linear;
     font-size: 1.5rem;
@@ -73,7 +74,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#e0dee9" : "#4b3830")};
+    background: ${({ open }) => (open ? "#f5f6de" : "#4b3830")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarMenu from "./NavbarMenu";
 import NavbarBurger from "./NavbarBurger";
 

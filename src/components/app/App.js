@@ -1,25 +1,29 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import { Font } from "../../fonts/Font";
-import { BackGroundImager } from "./appStyles";
-import bgImage from "../../images/portfolio-bg.png";
 import Content from "../content/Content";
+import Home from "./../home/Home";
+import Portfolio from "./../portfolio/Portfolio";
+import Contact from "./../contact/Contact";
+import BackgroundImg from "./../content/BackgroundImg";
 
 const App = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div>
-      <Font />
-      <Navbar
-        open={open}
-        setOpen={setOpen}
-        style={{ position: "fixed", left: 0 }}
-      />
-      <Content />
-      <BackGroundImager open={open} setOpen={setOpen}>
-        <img src={bgImage} alt="me and my pugs" style={{ height: "auto" }} />
-      </BackGroundImager>
-    </div>
+    <Router>
+      <div>
+        <Font />
+        <Navbar open={open} setOpen={setOpen} />
+        <Content />
+        <BackgroundImg />
+        <Switch>
+          <Route path="/" exat component={Home} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </div>
+    </Router>
   );
 };
 
