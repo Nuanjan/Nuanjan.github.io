@@ -19,7 +19,7 @@ export const StyledMenu = styled.nav`
   transition: all 0.5s ease-in-out;
   position: sticky;
   z-index: 10;
-  height: 900px;
+  height: 1200px;
 
   a {
     font-size: 2rem;

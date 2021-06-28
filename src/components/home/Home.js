@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Content from "../content/Content";
+import BackgroundImg from "./../content/BackgroundImg";
 import {
   IconArrowDown,
   Bounce,
@@ -34,6 +35,7 @@ const Home = () => {
             </IconArrowDown>
           </Bounce>
         </ArrowWrapper>
+        <BackgroundImg />
       </Content>
     </div>
   );

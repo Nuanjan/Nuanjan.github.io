@@ -1,11 +1,22 @@
 import React from "react";
-import { PortfolioContainer } from "./portfolioStyles";
+import {
+  PortfolioContainer,
+  PortfolioHeader,
+  PortfolioText,
+} from "./portfolioStyles";
 import PortfolioDetail from "./PortfolioDetail";
+import Content from "./../content/Content";
+
 const Portfolio = () => {
   return (
-    <PortfolioContainer>
-      <PortfolioDetail />
-    </PortfolioContainer>
+    <Content>
+      <PortfolioContainer>
+        <PortfolioHeader>
+          <PortfolioText>PORTFOLIO</PortfolioText>
+        </PortfolioHeader>
+        <PortfolioDetail />
+      </PortfolioContainer>
+    </Content>
   );
 };
 

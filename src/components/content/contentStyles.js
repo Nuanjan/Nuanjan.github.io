@@ -11,7 +11,6 @@ export const ContentContainer = styled.section`
 export const BackGroundImage = styled.div`
   display: flex;
   flex-direction: column;
-  z-index: 1;
 `;
 
 export const ContentWrapper = styled.div`
