@@ -75,7 +75,6 @@ export const TextSpan = styled.span`
     &:hover {
         animation: ${rainbowTextSimpleAnimation} 0.5s ease-in forwards;  
     }
-
 }
 `;
 

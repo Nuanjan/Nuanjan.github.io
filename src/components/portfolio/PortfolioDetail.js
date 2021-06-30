@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   PortfolioDetailCard,
   PortfolioImage,
   PortfolioInformation,
+  InheriteBtn,
+  BtnContainer,
 } from "./portfolioStyles";
 import { PortfolioData } from "./PortfolioData";
 
@@ -17,11 +20,21 @@ const PortfolioDetail = () => {
           {port.technologies}
         </p>
         <p>{port.detail}</p>
-        <div>
-          <button>App Link</button>
-          <button disabled={!port.ghFrontEndLink}>GitHub FrontEnd Link</button>
-          <button disabled={!port.ghBackEndLink}>GitHub Backend Link</button>
-        </div>
+        <BtnContainer>
+          <Link to={{ pathname: port.appLink }} target="_blank">
+            <InheriteBtn>App Link</InheriteBtn>
+          </Link>
+          {port.ghFrontEndLink && (
+            <Link to={{ pathname: port.ghFrontEndLink }} target="_blank">
+              <InheriteBtn>GitHub FrontEnd Link</InheriteBtn>
+            </Link>
+          )}
+          {port.ghBackEndLink && (
+            <Link to={{ pathname: port.ghBackEndLink }} target="_blank">
+              <InheriteBtn>GitHub BackEnd Link</InheriteBtn>
+            </Link>
+          )}
+        </BtnContainer>
       </PortfolioInformation>
     </PortfolioDetailCard>
   ));

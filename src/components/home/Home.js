@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Content from "../content/Content";
 import BackgroundImg from "./../content/BackgroundImg";
+import { useHistory } from "react-router-dom";
 import {
   IconArrowDown,
   Bounce,
@@ -11,6 +12,7 @@ import {
 } from "./aboutMeStyles";
 
 const Home = () => {
+  const history = useHistory();
   return (
     <div>
       <Content>

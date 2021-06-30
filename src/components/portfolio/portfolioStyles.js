@@ -35,3 +35,49 @@ export const PortfolioDetailCard = styled.div`
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 `;
+
+const ParentBtn = styled.button`
+  width: 90%;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #fffbc8;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+`;
+
+export const InheriteBtn = styled(ParentBtn)`
+  border-color: #fffbc8;
+  color: #fff;
+  background-image: linear-gradient(45deg, #f9c325 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+    color: #1f1c20;
+  }
+`;
+
+export const BtnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
