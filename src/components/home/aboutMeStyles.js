@@ -48,6 +48,15 @@ export const ParagraphContainer = styled.div`
   font-size: 1rem;
   text-align: center;
   z-index: 0;
+  max-width: 70%;
+
+  @media (min-width: 1040px) {
+    font-size: 2rem;
+    line-height: 2.5;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 10%;
+  }
 `;
 
 export const TextSpan = styled.span`

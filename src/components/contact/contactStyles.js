@@ -16,6 +16,11 @@ export const ContactMeContainer = styled.div`
   margin: 150px 20px;
   padding: 20px;
   position: relative;
+
+  @media (min-width: 750px) {
+    max-width: 70%;
+    margin: 100px auto 0;
+  }
 `;
 
 export const ContactHeader = styled.h1`

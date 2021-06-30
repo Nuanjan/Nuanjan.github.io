@@ -21,8 +21,11 @@ export const StyledMenu = styled.nav`
   z-index: 10;
   height: 1200px;
 
+  @media (min-width: 750px) {
+    height: 1800px;
+  }
+
   a {
-    font-size: 2rem;
     text-transform: uppercase;
     padding: 1.5rem 0;
     font-weight: bold;
@@ -30,7 +33,7 @@ export const StyledMenu = styled.nav`
     color: #f5f6de;
     text-decoration: none;
     transition: color 0.3s linear;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     position: relative;
   }
   a:before {

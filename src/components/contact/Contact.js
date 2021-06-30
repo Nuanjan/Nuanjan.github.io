@@ -6,6 +6,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { VscGithub } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 import {
   SocialMediaBtnContainer,
   SocialMediaWrapper,
@@ -42,15 +43,32 @@ const Contact = () => {
           <div>
             <h4>social media</h4>
             <SocialMediaBtnContainer>
-              <SocialMediaWrapper>
-                <RiFacebookCircleLine size="48px" color="#4f4a41" />
-              </SocialMediaWrapper>
-              <SocialMediaWrapper>
-                <TiSocialLinkedinCircular size="60px" color="#4f4a41" />
-              </SocialMediaWrapper>
-              <SocialMediaWrapper>
-                <VscGithub size="45px" color="#4f4a41" />
-              </SocialMediaWrapper>
+              <Link
+                to={{ pathname: "https://www.facebook.com/nuanjan.peamarun" }}
+                target="_blank"
+              >
+                <SocialMediaWrapper>
+                  <RiFacebookCircleLine size="48px" color="#4f4a41" />
+                </SocialMediaWrapper>
+              </Link>
+              <Link
+                to={{
+                  pathname: "https://www.linkedin.com/in/nuanjan-schluntz/",
+                }}
+                target="_blank"
+              >
+                <SocialMediaWrapper>
+                  <TiSocialLinkedinCircular size="60px" color="#4f4a41" />
+                </SocialMediaWrapper>
+              </Link>
+              <Link
+                to={{ pathname: "https://github.com/Nuanjan" }}
+                target="_blank"
+              >
+                <SocialMediaWrapper>
+                  <VscGithub size="45px" color="#4f4a41" />
+                </SocialMediaWrapper>
+              </Link>
             </SocialMediaBtnContainer>
           </div>
         </div>
