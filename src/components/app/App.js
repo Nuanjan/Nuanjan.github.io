@@ -11,8 +11,8 @@ import { AppContainer } from "./appStyles";
 const App = () => {
   const [open, setOpen] = useState(false);
   return (
-    <Router>
-      <AppContainer>
+    <AppContainer>
+      <Router>
         <Font />
         <Navbar open={open} setOpen={setOpen} />
         <Content />
@@ -21,8 +21,8 @@ const App = () => {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
         </Switch>
-      </AppContainer>
-    </Router>
+      </Router>
+    </AppContainer>
   );
 };
 

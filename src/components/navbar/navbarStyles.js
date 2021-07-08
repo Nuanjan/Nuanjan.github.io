@@ -11,19 +11,15 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
+  padding: 100px;
   justify-content: begin;
-  padding-top: 100px;
   align-items: center;
   background: rgba(172, 146, 137, 0.9);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: all 0.5s ease-in-out;
   position: sticky;
   z-index: 10;
-  height: 1200px;
-
-  @media (min-width: 750px) {
-    height: 1800px;
-  }
+  height: 2500px;
 
   a {
     text-transform: uppercase;
@@ -51,7 +47,18 @@ export const StyledMenu = styled.nav`
   }
   a:hover:before {
     visibility: visible;
-    transform: scaleX(1.5);
+    transform: scaleX(1);
+  }
+  @media (min-width: 1000px) {
+    height: 100%;
+    justify-content: begin;
+    transform: none;
+    padding: 0;
+
+    a {
+      line-height: 150px;
+      letter-spacing: 0.5rem;
+    }
   }
 `;
 
@@ -96,4 +103,10 @@ export const StyledBurger = styled.button`
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `;
+
+export const NavbarWrapper = styled.div``;

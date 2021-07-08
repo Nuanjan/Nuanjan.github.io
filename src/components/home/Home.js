@@ -27,7 +27,7 @@ const Home = () => {
           work ethic that I will bring with me everyday.
           <br />
         </ParagraphContainer>
-        <ArrowWrapper>
+        {/* <ArrowWrapper>
           <Bounce>
             <IconArrowDown>
               <h3 style={{ color: "#4f4a41", marginLeft: "-30px" }}>
@@ -36,7 +36,7 @@ const Home = () => {
               <IoIosArrowDown size="60px" color="#4f4a41" />
             </IconArrowDown>
           </Bounce>
-        </ArrowWrapper>
+        </ArrowWrapper> */}
         <BackgroundImg />
       </Content>
     </div>

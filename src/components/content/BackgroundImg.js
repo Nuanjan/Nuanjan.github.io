@@ -6,7 +6,16 @@ import Content from "./Content";
 const BackgroundImg = () => {
   return (
     <BackGroundImage>
-      <img src={bgImage} alt="me and my pugs" style={{ height: "auto" }} />
+      <img
+        src={bgImage}
+        alt="me and my pugs"
+        style={{
+          height: "auto",
+          objectFit: "cover",
+          width: "100%",
+          height: "100%",
+        }}
+      />
     </BackGroundImage>
   );
 };

@@ -9,6 +9,7 @@ export const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
 `;
 
 export const ContactMeContainer = styled.div`
@@ -17,9 +18,9 @@ export const ContactMeContainer = styled.div`
   padding: 20px;
   position: relative;
 
-  @media (min-width: 750px) {
-    max-width: 70%;
-    margin: 100px auto 0;
+  @media (min-width: 1000px) {
+    width: 200%;
+    right: -20%;
   }
 `;
 

@@ -14,11 +14,16 @@ export const BackGroundImage = styled.div`
   margin: 0 auto;
   justify-content: center;
   max-height: 450px;
-  max-width: 450px;
+  max-width: 350px;
 `;
 
 export const ContentWrapper = styled.div`
   position: absolute;
-  width: 100%;
   top: 0;
+  width: 100%;
+
+  @media (min-width: 1000px) {
+    position: static;
+    width: auto;
+  }
 `;

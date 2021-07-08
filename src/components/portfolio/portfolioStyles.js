@@ -13,7 +13,7 @@ export const PortfolioText = styled.h1`
 `;
 
 export const PortfolioContainer = styled.section`
-  margin-top: 100px;
+  margin: 100px 10px 0 0;
 `;
 
 export const PortfolioImage = styled.img`
