@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.7697d98d.chunk.js",
+    "main.js.map": "/static/js/main.7697d98d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bf3f89e5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bf3f89e5.js.map",
+    "static/js/2.633f0ce4.chunk.js": "/static/js/2.633f0ce4.chunk.js",
+    "static/js/2.633f0ce4.chunk.js.map": "/static/js/2.633f0ce4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.633f0ce4.chunk.js.LICENSE.txt": "/static/js/2.633f0ce4.chunk.js.LICENSE.txt",
+    "static/media/activity-hub.63d06240.png": "/static/media/activity-hub.63d06240.png",
+    "static/media/grocery-helper.2bd3fc82.png": "/static/media/grocery-helper.2bd3fc82.png",
+    "static/media/portfolio-bg.becc6fa1.png": "/static/media/portfolio-bg.becc6fa1.png",
+    "static/media/post-me.b4a1a8ce.png": "/static/media/post-me.b4a1a8ce.png",
+    "static/media/rice-n-fire.0001e0a8.png": "/static/media/rice-n-fire.0001e0a8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf3f89e5.js",
+    "static/js/2.633f0ce4.chunk.js",
+    "static/js/main.7697d98d.chunk.js"
+  ]
+}
