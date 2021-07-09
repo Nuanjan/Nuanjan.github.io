@@ -11,15 +11,15 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 80px 45px;
   justify-content: begin;
   align-items: center;
   background: rgba(172, 146, 137, 0.9);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: all 0.5s ease-in-out;
-  position: sticky;
+  position: fixed;
   z-index: 10;
-  height: 2500px;
+  height: 100%;
 
   a {
     text-transform: uppercase;
@@ -51,19 +51,17 @@ export const StyledMenu = styled.nav`
   }
   @media (min-width: 1000px) {
     height: 100%;
-    justify-content: begin;
+    justify-content: space-around;
     transform: none;
-    padding: 0;
-
-    a {
-      line-height: 150px;
-      letter-spacing: 0.5rem;
-    }
+    padding: 0 10px 0 15px;
+  }
+  a {
+    justify-self: start;
   }
 `;
 
 export const StyledBurger = styled.button`
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 2rem;
   display: flex;
@@ -75,7 +73,7 @@ export const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 100;
+  z-index: 1000;
 
   &:focus {
     outline: none;
@@ -109,4 +107,6 @@ export const StyledBurger = styled.button`
   }
 `;
 
-export const NavbarWrapper = styled.div``;
+export const NavbarWrapper = styled.div`
+  height: 100%;
+`;

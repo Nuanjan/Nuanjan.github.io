@@ -79,22 +79,16 @@ export const TextSpan = styled.span`
         #6b0f1a 83.333%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
-        animation: ${rainbowTextSimpleAnimationRev} 0.75s ease forwards;
+        animation: ${rainbowTextSimpleAnimationRev} 0.9s ease forwards;
 
     &:hover {
-        animation: ${rainbowTextSimpleAnimation} 0.5s ease-in forwards;  
+        animation: ${rainbowTextSimpleAnimation} 0.6s ease-in forwards;  
     }
 }
 `;
 
 export const IconArrowDown = styled.div`
   height: 200px;
-`;
-
-export const Bounce = styled.div`
-  display: flex;
-  justify-content: center;
-  animation: ${bounce} 3s infinite;
 `;
 
 export const ArrowWrapper = styled.div`
