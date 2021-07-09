@@ -32,7 +32,7 @@ export const PortfolioData = [
     technologies: "React, Firebase, Twilio API",
     detail:
       "ActivityHub is a GA holiday Hackathon project. The purpose of this application is to connect people who missed the activity that they can join before the pandemic. This application was develop in a short amount of time. but it will helps people connect together again!",
-    appLink: "https://nuanjan.github.io/grocery-helper-client/",
+    appLink: "https://video-activity-hub.herokuapp.com/",
     ghFrontEndLink: "https://github.com/ActivityHub/video-activity-hub",
     ghBackEndLink: "",
   },
