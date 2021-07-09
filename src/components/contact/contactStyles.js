@@ -19,7 +19,7 @@ export const ContactMeContainer = styled.div`
   position: relative;
 
   @media (min-width: 1000px) {
-    width: 200%;
+    width: 100%;
     right: -20%;
   }
 `;
