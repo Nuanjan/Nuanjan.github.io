@@ -11,13 +11,14 @@ import styled from "styled-components";
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  padding: 80px 45px;
+  padding: 80px 0;
   justify-content: begin;
   align-items: center;
   background: rgba(172, 146, 137, 0.9);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: all 0.5s ease-in-out;
   position: fixed;
+  width: 100%;
   z-index: 10;
   height: 100%;
 
@@ -50,6 +51,7 @@ export const StyledMenu = styled.nav`
     transform: scaleX(1);
   }
   @media (min-width: 1000px) {
+    position: sticky;
     height: 100%;
     justify-content: space-around;
     transform: none;
@@ -107,6 +109,4 @@ export const StyledBurger = styled.button`
   }
 `;
 
-export const NavbarWrapper = styled.div`
-  height: 100%;
-`;
+export const NavbarWrapper = styled.div``;

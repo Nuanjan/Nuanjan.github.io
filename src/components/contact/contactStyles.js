@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const SocialMediaBtnContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   max-width: 500px;
 `;
@@ -32,4 +32,16 @@ export const ContactHeader = styled.h1`
   padding: 0 20px;
   background-color: #e4e1dc;
   color: #4f4a41;
+`;
+
+export const ContactIcon = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const IconSpan = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
 `;

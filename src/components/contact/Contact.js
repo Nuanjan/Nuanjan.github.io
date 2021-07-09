@@ -12,6 +12,8 @@ import {
   SocialMediaWrapper,
   ContactMeContainer,
   ContactHeader,
+  ContactIcon,
+  IconSpan,
 } from "./contactStyles";
 const Contact = () => {
   return (
@@ -24,21 +26,21 @@ const Contact = () => {
           <h3>Let get in touch</h3>
           <div>
             <h4>number</h4>
-            <div>
-              <span>
-                <GiVibratingSmartphone />
-              </span>
+            <ContactIcon>
+              <IconSpan>
+                <GiVibratingSmartphone size="20px" />
+              </IconSpan>
               (857) 265 5359
-            </div>
+            </ContactIcon>
           </div>
           <div>
             <h4>email</h4>
-            <div>
-              <span>
-                <HiOutlineMail />
-              </span>
+            <ContactIcon>
+              <IconSpan>
+                <HiOutlineMail size="20px" />
+              </IconSpan>
               nuanjan.schluntz@gmail.com
-            </div>
+            </ContactIcon>
           </div>
           <div>
             <h4>social media</h4>

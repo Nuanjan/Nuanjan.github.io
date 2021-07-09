@@ -20,6 +20,7 @@ export const PortfolioImage = styled.img`
   max-width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: scale-down;
 
   @media (min-width: 1240px) {
     width: 50%;
