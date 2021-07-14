@@ -10,7 +10,7 @@ export const PortfolioData = [
     technologies:
       "React, HTML,CSS, Atom, Bootstrap, S3, Express.js, Axios, Node.js, MongoDB.",
     detail:
-      "A capstone single page web application project. User can create update or delete the post or comment on someone post. Authentication is required",
+      "A capstone single page web application project. Users can create update or delete the post or comment on someone post. Authentication is required",
     appLink: "https://nuanjan.github.io/post-me-client/#/",
     ghFrontEndLink: "https://github.com/Nuanjan/post-me-client",
     ghBackEndLink: "https://github.com/Nuanjan/post-me-api",
