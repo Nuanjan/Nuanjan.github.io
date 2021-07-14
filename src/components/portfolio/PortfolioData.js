@@ -10,7 +10,7 @@ export const PortfolioData = [
     technologies:
       "React, HTML,CSS, Atom, Bootstrap, S3, Express.js, Axios, Node.js, MongoDB.",
     detail:
-      "A capstone single web application project. User can create update or delete the post or comment on someone post. Authentication is required",
+      "A capstone single page web application project. User can create update or delete the post or comment on someone post. Authentication is required",
     appLink: "https://nuanjan.github.io/post-me-client/#/",
     ghFrontEndLink: "https://github.com/Nuanjan/post-me-client",
     ghBackEndLink: "https://github.com/Nuanjan/post-me-api",
@@ -21,7 +21,7 @@ export const PortfolioData = [
     technologies:
       "jQuery, Handlebars, HTML, CSS, Atom, Bootstrap, Express.js, Ajex, Node.js, MongoDB.",
     detail:
-      "Client can creates, updates, views and deletes the grocery list. Authentication is required to uses the app.",
+      "Client can create, updates, view and delete the grocery list. Authentication is required to use the app.",
     appLink: "https://nuanjan.github.io/grocery-helper-client/",
     ghFrontEndLink: "https://github.com/Nuanjan/grocery-helper-client",
     ghBackEndLink: "https://github.com/Nuanjan/grocery-helper-api",
@@ -31,7 +31,7 @@ export const PortfolioData = [
     imgUrl: ActivityHubImg,
     technologies: "React, Firebase, Twilio API",
     detail:
-      "ActivityHub is a GA holiday Hackathon project. The purpose of this application is to connect people who missed the activity that they can join before the pandemic. This application was develop in a short amount of time. but it will helps people connect together again!",
+      "ActivityHub is a General Assemly holiday Hackathon project. The purpose of this application is to connect people who missed the activity that they can join before the pandemic. This application was developed in a short amount of time, but it will help people connect together again!",
     appLink: "https://video-activity-hub.herokuapp.com/",
     ghFrontEndLink: "https://github.com/ActivityHub/video-activity-hub",
     ghBackEndLink: "",
@@ -41,7 +41,7 @@ export const PortfolioData = [
     imgUrl: RiceNFireImg,
     technologies: "React, Bootstrap, MUI, firebase.",
     detail:
-      "Indigo Award Winner 2021 in Restaurant/Cafe category as well as Mobile Responsive category. worked across with marketing, design and developer team. worked with agile principle to developed the project.",
+      "Indigo Award Winner 2021 in Restaurant/Cafe category as well as Mobile Responsive category. Worked across with marketing, design and developer team. Worked with agile principle to developed the project.",
     appLink: "https://ricenfire.com/",
     ghbackEndLink: "",
     ghFrontendLink: "",
