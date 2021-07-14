@@ -12,7 +12,7 @@ const Portfolio = () => {
     <Content>
       <PortfolioContainer>
         <PortfolioHeader>
-          <PortfolioText>PORTFOLIO</PortfolioText>
+          <PortfolioText>PROJECTS</PortfolioText>
         </PortfolioHeader>
         <PortfolioDetail />
       </PortfolioContainer>

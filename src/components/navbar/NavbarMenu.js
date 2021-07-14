@@ -9,7 +9,7 @@ const NavbarMenu = ({ open, setOpen }) => {
         <a href="/">HOME</a>
       </Link>
       <Link to="/portfolio" onClick={() => setOpen(false)}>
-        <a href="/">PORTFOLIO</a>
+        <a href="/">PROJECTS</a>
       </Link>
       <Link to="/contact" onClick={() => setOpen(false)}>
         <a href="/">CONTACT</a>

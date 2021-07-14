@@ -4,12 +4,18 @@ export const SocialMediaBtnContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (min-width: 1000px) {
+    justify-content: start;
+  }
 `;
 
 export const SocialMediaWrapper = styled.div`
   display: flex;
   align-items: center;
   max-width: 500px;
+  @media (min-width: 1000px) {
+    margin-right: 50px;
+  }
 `;
 
 export const ContactMeContainer = styled.div`
@@ -19,8 +25,8 @@ export const ContactMeContainer = styled.div`
   position: relative;
 
   @media (min-width: 1000px) {
-    width: 100%;
-    right: -20%;
+    width: 90%;
+    margin: 150px auto;
   }
 `;
 

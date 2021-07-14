@@ -50,8 +50,8 @@ export const ParagraphContainer = styled.div`
   z-index: 0;
   max-width: 70%;
 
-  @media (min-width: 1040px) {
-    font-size: 2rem;
+  @media (min-width: 1000px) {
+    font-size: 2.2rem;
     line-height: 2.5;
     font-weight: 600;
     margin-top: 50px;

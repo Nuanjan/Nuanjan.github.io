@@ -3,8 +3,10 @@ import Content from "./../content/Content";
 import BackgroundImg from "./../content/BackgroundImg";
 import { GiVibratingSmartphone } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
-import { RiFacebookCircleLine } from "react-icons/ri";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
+import {
+  TiSocialLinkedinCircular,
+  TiSocialTwitterCircular,
+} from "react-icons/ti";
 import { VscGithub } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import {
@@ -25,32 +27,36 @@ const Contact = () => {
         <div>
           <h3>Let get in touch</h3>
           <div>
-            <h4>number</h4>
+            <h2>name</h2>
+            <h2>Nuanjan Schluntz (Noon)</h2>
+          </div>
+          <div>
+            <h2>number</h2>
             <ContactIcon>
               <IconSpan>
                 <GiVibratingSmartphone size="20px" />
               </IconSpan>
-              (857) 265 5359
+              <h3>(857) 265 5359</h3>
             </ContactIcon>
           </div>
           <div>
-            <h4>email</h4>
+            <h2>email</h2>
             <ContactIcon>
               <IconSpan>
                 <HiOutlineMail size="20px" />
               </IconSpan>
-              nuanjan.schluntz@gmail.com
+              <h3>nuanjan.schluntz@gmail.com</h3>
             </ContactIcon>
           </div>
           <div>
-            <h4>social media</h4>
+            <h2>social media</h2>
             <SocialMediaBtnContainer>
               <Link
-                to={{ pathname: "https://www.facebook.com/nuanjan.peamarun" }}
+                to={{ pathname: "https://twitter.com/NuanjanSchluntz" }}
                 target="_blank"
               >
                 <SocialMediaWrapper>
-                  <RiFacebookCircleLine size="48px" color="#4f4a41" />
+                  <TiSocialTwitterCircular size="60px" color="#4f4a41" />
                 </SocialMediaWrapper>
               </Link>
               <Link

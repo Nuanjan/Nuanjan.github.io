@@ -5,6 +5,6 @@ export const AppContainer = styled.div`
 
   @media (min-width: 1000px) {
     display: flex;
-    height: auto;
+    border: 1px solid transparent;
   }
 `;

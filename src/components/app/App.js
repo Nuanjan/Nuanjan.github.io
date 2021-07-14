@@ -15,7 +15,6 @@ const App = () => {
       <Router>
         <Font />
         <Navbar open={open} setOpen={setOpen} />
-        <Content />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" component={Portfolio} />
