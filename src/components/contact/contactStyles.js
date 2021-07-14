@@ -51,3 +51,7 @@ export const IconSpan = styled.span`
   justify-content: center;
   padding-right: 10px;
 `;
+
+export const TextParagraph = styled.p`
+  font-size: 1.2rem;
+`;

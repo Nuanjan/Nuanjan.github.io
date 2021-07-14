@@ -16,6 +16,7 @@ import {
   ContactHeader,
   ContactIcon,
   IconSpan,
+  TextParagraph,
 } from "./contactStyles";
 const Contact = () => {
   return (
@@ -28,7 +29,7 @@ const Contact = () => {
           <h2>Let's get in touch</h2>
           <div>
             <h2>Name</h2>
-            <h2>Nuanjan Schluntz (Noon)</h2>
+            <TextParagraph>Nuanjan Schluntz (Noon)</TextParagraph>
           </div>
           <div>
             <h2>Number</h2>
@@ -36,7 +37,7 @@ const Contact = () => {
               <IconSpan>
                 <GiVibratingSmartphone size="20px" />
               </IconSpan>
-              <h3>(857) 265 5359</h3>
+              <TextParagraph>(857) 265 5359</TextParagraph>
             </ContactIcon>
           </div>
           <div>
@@ -45,7 +46,7 @@ const Contact = () => {
               <IconSpan>
                 <HiOutlineMail size="20px" />
               </IconSpan>
-              <h3>nuanjan.schluntz@gmail.com</h3>
+              <TextParagraph>nuanjan.schluntz@gmail.com</TextParagraph>
             </ContactIcon>
           </div>
           <div>
