@@ -21,7 +21,7 @@ export const PortfolioData = [
     technologies:
       "jQuery, Handlebars, HTML, CSS, Atom, Bootstrap, Express.js, Ajex, Node.js, MongoDB.",
     detail:
-      "Client can create, updates, view and delete the grocery list. Authentication is required to use the app.",
+      "Client can create, update, view and delete the grocery list. Authentication is required to use the app.",
     appLink: "https://nuanjan.github.io/grocery-helper-client/",
     ghFrontEndLink: "https://github.com/Nuanjan/grocery-helper-client",
     ghBackEndLink: "https://github.com/Nuanjan/grocery-helper-api",
