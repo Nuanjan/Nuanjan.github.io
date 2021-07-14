@@ -25,13 +25,13 @@ const Contact = () => {
           <ContactHeader>Contact Me</ContactHeader>
         </div>
         <div>
-          <h3>Let get in touch</h3>
+          <h2>Let's get in touch</h2>
           <div>
-            <h2>name</h2>
+            <h2>Name</h2>
             <h2>Nuanjan Schluntz (Noon)</h2>
           </div>
           <div>
-            <h2>number</h2>
+            <h2>Number</h2>
             <ContactIcon>
               <IconSpan>
                 <GiVibratingSmartphone size="20px" />
@@ -40,7 +40,7 @@ const Contact = () => {
             </ContactIcon>
           </div>
           <div>
-            <h2>email</h2>
+            <h2>Email</h2>
             <ContactIcon>
               <IconSpan>
                 <HiOutlineMail size="20px" />
@@ -49,7 +49,7 @@ const Contact = () => {
             </ContactIcon>
           </div>
           <div>
-            <h2>social media</h2>
+            <h2>Social Media</h2>
             <SocialMediaBtnContainer>
               <Link
                 to={{ pathname: "https://twitter.com/NuanjanSchluntz" }}
