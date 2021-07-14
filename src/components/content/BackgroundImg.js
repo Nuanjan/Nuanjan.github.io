@@ -9,7 +9,7 @@ const BackgroundImg = () => {
         src={bgImage}
         alt="me and my pugs"
         style={{
-          objectFit: "cover",
+          objectFit: "contain",
         }}
       />
     </BackGroundImage>
