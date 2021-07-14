@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 import {
   PortfolioDetailCard,
   PortfolioImage,
   PortfolioInformation,
   InheriteBtn,
   BtnContainer,
+  IconSpan,
 } from "./portfolioStyles";
 import { PortfolioData } from "./PortfolioData";
 
@@ -26,7 +29,12 @@ const PortfolioDetail = () => {
             target="_blank"
             style={{ textDecoration: "none" }}
           >
-            <InheriteBtn>App Link</InheriteBtn>
+            <InheriteBtn>
+              <IconSpan>
+                <CgWebsite size="20px" />
+              </IconSpan>
+              <p>App Link</p>
+            </InheriteBtn>
           </Link>
           {port.ghFrontEndLink && (
             <Link
@@ -34,7 +42,12 @@ const PortfolioDetail = () => {
               target="_blank"
               style={{ textDecoration: "none" }}
             >
-              <InheriteBtn>GitHub FrontEnd Link</InheriteBtn>
+              <InheriteBtn>
+                <IconSpan>
+                  <FaGithub size="20px" />
+                </IconSpan>
+                <p>GitHub FrontEnd Link</p>
+              </InheriteBtn>
             </Link>
           )}
           {port.ghBackEndLink && (
@@ -43,7 +56,12 @@ const PortfolioDetail = () => {
               target="_blank"
               style={{ textDecoration: "none" }}
             >
-              <InheriteBtn>GitHub BackEnd Link</InheriteBtn>
+              <InheriteBtn>
+                <IconSpan>
+                  <FaGithub size="20px" />
+                </IconSpan>
+                <p>GitHub BackEnd Link</p>
+              </InheriteBtn>
             </Link>
           )}
         </BtnContainer>

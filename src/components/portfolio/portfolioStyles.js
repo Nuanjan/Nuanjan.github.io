@@ -53,8 +53,8 @@ const ParentBtn = styled.button`
   width: 90%;
   box-sizing: border-box;
   appearance: none;
-  background-color: transparent;
-  border: 2px solid #fffbc8;
+  background-color: #fffbc8;
+  border: 2px solid #232a3a;
   border-radius: 0.6em;
   cursor: pointer;
   display: flex;
@@ -77,11 +77,13 @@ const ParentBtn = styled.button`
 
 export const InheriteBtn = styled(ParentBtn)`
   border-color: #fffbc8;
-  color: #fff;
+  color: #4b3830;
   background-image: linear-gradient(45deg, #f9c325 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: background 300ms ease-in-out;
+  display: flex;
+  align-items: center;
 
   &:hover {
     background-position: 0;
@@ -93,4 +95,8 @@ export const BtnContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+export const IconSpan = styled.span`
+  margin-right: 10px;
 `;
