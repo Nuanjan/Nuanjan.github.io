@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.790cebfe.chunk.js",
-    "main.js.map": "/static/js/main.790cebfe.chunk.js.map",
+    "main.js": "/static/js/main.4c82a634.chunk.js",
+    "main.js.map": "/static/js/main.4c82a634.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf3f89e5.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf3f89e5.js.map",
-    "static/js/2.84ad603e.chunk.js": "/static/js/2.84ad603e.chunk.js",
-    "static/js/2.84ad603e.chunk.js.map": "/static/js/2.84ad603e.chunk.js.map",
+    "static/js/2.e746db24.chunk.js": "/static/js/2.e746db24.chunk.js",
+    "static/js/2.e746db24.chunk.js.map": "/static/js/2.e746db24.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.84ad603e.chunk.js.LICENSE.txt": "/static/js/2.84ad603e.chunk.js.LICENSE.txt",
+    "static/js/2.e746db24.chunk.js.LICENSE.txt": "/static/js/2.e746db24.chunk.js.LICENSE.txt",
     "static/media/activity-hub.63d06240.png": "/static/media/activity-hub.63d06240.png",
     "static/media/grocery-helper.2bd3fc82.png": "/static/media/grocery-helper.2bd3fc82.png",
     "static/media/portfolio-bg.becc6fa1.png": "/static/media/portfolio-bg.becc6fa1.png",
@@ -16,7 +16,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bf3f89e5.js",
-    "static/js/2.84ad603e.chunk.js",
-    "static/js/main.790cebfe.chunk.js"
+    "static/js/2.e746db24.chunk.js",
+    "static/js/main.4c82a634.chunk.js"
   ]
 }
