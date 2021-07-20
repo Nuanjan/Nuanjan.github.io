@@ -13,7 +13,7 @@ const ResumeStretchAnimation = keyframes`
 0% {
   transform: scale(.85);
   background-color: rgb(75, 31, 4, 0.2);
-  border-radius: 40%;
+  border-radius: 30%;
 }
 50% {
   background-color: rgb(233, 231, 228, 0.4);
@@ -72,7 +72,7 @@ export const ResumeBtnInside = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.5px auto;
+  margin: 5px auto;
   animation-name: ${ResumeStretchAnimationInsice};
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
