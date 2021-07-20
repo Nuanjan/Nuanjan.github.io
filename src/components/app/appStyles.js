@@ -59,7 +59,7 @@ export const ResumeBtn = styled.div`
   animation-fill-mode: none;
   animation-play-state: running;
   @media (min-width: 1000px) {
-    height: 105px;
+    height: 110px;
     width: 205px;
   }
 `;
