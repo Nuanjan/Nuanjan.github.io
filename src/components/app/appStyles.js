@@ -48,7 +48,7 @@ export const ResumeBtn = styled.div`
   bottom: ${({ slideDown }) => slideDown && "0"};
   height: 105px;
   width: 205px;
-  z-index: 1000;
+  z-index: 5;
   background-color: #4b1f0e;
   animation: ${ResumeStretchAnimation};
   animation-duration: 1.5s;
