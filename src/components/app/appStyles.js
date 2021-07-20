@@ -44,10 +44,11 @@ const ResumeStretchAnimationInsice = keyframes`
 export const ResumeBtn = styled.div`
   position: fixed;
   right: 0;
+  margin-top: 30px;
   transition: bottom 1.5s linear;
   bottom: ${({ slideDown }) => slideDown && "0"};
-  height: 105px;
-  width: 205px;
+  height: 60px;
+  width: 150px;
   z-index: 5;
   background-color: #4b1f0e;
   animation: ${ResumeStretchAnimation};
@@ -57,11 +58,15 @@ export const ResumeBtn = styled.div`
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
+  @media (min-width: 1000px) {
+    height: 105px;
+    width: 205px;
+  }
 `;
 
 export const ResumeBtnInside = styled.div`
-  height: 100px;
-  width: 200px;
+  height: 50px;
+  width: 130px;
   background-color: #0e0504;
   color: white;
   display: flex;
@@ -76,8 +81,18 @@ export const ResumeBtnInside = styled.div`
   animation-fill-mode: none;
   animation-play-state: running;
   & span {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
     animation: none;
+  }
+
+  @media (min-width: 1000px) {
+    height: 100px;
+    width: 200px;
+    & span {
+      font-size: 32px;
+      font-weight: 600;
+      animation: none;
+    }
   }
 `;
