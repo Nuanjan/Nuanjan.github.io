@@ -1,5 +1,24 @@
 import styled, { keyframes } from "styled-components";
 
+const slideUp = keyframes`
+0%{
+  transform: translateY(100%);
+}
+100%{
+  transform: translateY(0);
+}
+
+`;
+const slideDown = keyframes`
+0%{
+  transform: translateY(-100%);
+}
+100%{
+  transform: translateY(0);
+}
+
+`;
+
 const rainbowTextSimpleAnimationRev = keyframes`
    {
     0% {
@@ -42,6 +61,7 @@ const bounce = keyframes`{
 }`;
 
 export const ParagraphContainer = styled.div`
+  overflow: hidden;
   margin-top: 100px;
   padding: 20%;
   color: #2c2414;
@@ -49,6 +69,7 @@ export const ParagraphContainer = styled.div`
   text-align: center;
   z-index: 0;
   max-width: 70%;
+  animation: ${slideUp} 3.2s ease;
 
   @media (min-width: 1000px) {
     font-size: 2.2rem;
@@ -79,7 +100,7 @@ export const TextSpan = styled.span`
         #6b0f1a 83.333%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
-        animation: ${rainbowTextSimpleAnimationRev} 0.9s ease forwards;
+        animation: ${rainbowTextSimpleAnimationRev} 1s ease forwards;
 
     &:hover {
         animation: ${rainbowTextSimpleAnimation} 0.6s ease-in forwards;  

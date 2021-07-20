@@ -1,17 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import { Font } from "../../fonts/Font";
-import Content from "../content/Content";
 import Home from "./../home/Home";
 import Portfolio from "./../portfolio/Portfolio";
 import Contact from "./../contact/Contact";
-import { AppContainer } from "./appStyles";
+import { AppContainer, ResumeBtn, ResumeBtnInside } from "./appStyles";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  const [slideDown, setSlideDown] = useState(false);
+  const controlResumeBtn = () => {
+    if (window.scrollY > 200) {
+      setSlideDown(true);
+    } else {
+      setSlideDown(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlResumeBtn);
+    return () => {
+      window.removeEventListener("scroll", controlResumeBtn);
+    };
+  }, []);
   return (
     <AppContainer>
+      <ResumeBtn slideDown={slideDown}>
+        <ResumeBtnInside>
+          <span>RESUME</span>
+        </ResumeBtnInside>
+      </ResumeBtn>
       <Router>
         <Font />
         <Navbar open={open} setOpen={setOpen} />
