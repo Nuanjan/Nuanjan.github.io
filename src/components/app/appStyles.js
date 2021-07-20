@@ -44,7 +44,7 @@ const ResumeStretchAnimationInsice = keyframes`
 export const ResumeBtn = styled.div`
   position: fixed;
   right: 0;
-  margin-top: 30px;
+  margin-top: 27px;
   transition: bottom 1.5s linear;
   bottom: ${({ slideDown }) => slideDown && "0"};
   height: 60px;
