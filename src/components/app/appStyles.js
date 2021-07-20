@@ -46,7 +46,7 @@ export const ResumeBtn = styled.div`
   right: 0;
   margin-top: 27px;
   transition: bottom 1.5s linear;
-  bottom: ${({ slideDown }) => slideDown && "0"};
+  bottom: ${({ slideDown }) => slideDown && "10px"};
   height: 60px;
   width: 150px;
   z-index: 5;
