@@ -6,6 +6,7 @@ import Home from "./../home/Home";
 import Portfolio from "./../portfolio/Portfolio";
 import Contact from "./../contact/Contact";
 import { AppContainer, ResumeBtn, ResumeBtnInside } from "./appStyles";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -26,12 +27,21 @@ const App = () => {
   }, []);
   return (
     <AppContainer>
-      <ResumeBtn slideDown={slideDown}>
-        <ResumeBtnInside>
-          <span>RESUME</span>
-        </ResumeBtnInside>
-      </ResumeBtn>
       <Router>
+        <ResumeBtn slideDown={slideDown}>
+          <Link
+            to={{
+              pathname:
+                "https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing",
+            }}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <ResumeBtnInside>
+              <span>RESUME</span>
+            </ResumeBtnInside>
+          </Link>
+        </ResumeBtn>
         <Font />
         <Navbar open={open} setOpen={setOpen} />
         <Switch>

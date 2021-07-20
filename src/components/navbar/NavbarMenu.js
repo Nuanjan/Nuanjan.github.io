@@ -14,6 +14,13 @@ const NavbarMenu = ({ open, setOpen }) => {
       <Link to="/contact" onClick={() => setOpen(false)}>
         <a href="/">CONTACT</a>
       </Link>
+      <a
+        href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
+        target="_blank"
+        onClick={() => setOpen(false)}
+      >
+        RESUME
+      </a>
     </StyledMenu>
   );
 };
