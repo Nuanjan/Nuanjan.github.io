@@ -1,11 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
 export const Font = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-body {
+body{
     padding: 0;
     margin: 0;
-    color: black;
-    font-family: 'Mitr', sans-serif;
 }
-`;
+p {
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+}
+h1, h2 {
+    font-family: 'Balsamiq Sans', cursive;
+}`;

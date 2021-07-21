@@ -10,12 +10,10 @@ import Content from "./../content/Content";
 const Portfolio = () => {
   return (
     <Content>
-      <PortfolioContainer>
-        <PortfolioHeader>
-          <PortfolioText>PROJECTS</PortfolioText>
-        </PortfolioHeader>
-        <PortfolioDetail />
-      </PortfolioContainer>
+      <PortfolioHeader>
+        <PortfolioText>PROJECTS</PortfolioText>
+      </PortfolioHeader>
+      <PortfolioDetail />
     </Content>
   );
 };

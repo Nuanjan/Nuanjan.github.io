@@ -20,13 +20,10 @@ export const SocialMediaWrapper = styled.div`
 
 export const ContactMeContainer = styled.div`
   border: 3px solid #4b3830;
-  margin: 150px 20px;
-  padding: 20px;
   position: relative;
 
   @media (min-width: 1000px) {
-    width: 90%;
-    margin: 150px auto;
+    width: 80%;
   }
 `;
 

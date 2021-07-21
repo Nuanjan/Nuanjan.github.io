@@ -1,41 +1,8 @@
-import PostMeImg from "./../../images/post-me.png";
-import GroceryHelperImg from "./../../images/grocery-helper.png";
+import PatriotsImg from "./../../images/patriots.png";
 import ActivityHubImg from "./../../images/activity-hub.png";
 import RiceNFireImg from "./../../images/rice-n-fire.png";
 
 export const PortfolioData = [
-  {
-    projectName: "Post Me",
-    imgUrl: PostMeImg,
-    technologies:
-      "React, HTML,CSS, Atom, Bootstrap, S3, Express.js, Axios, Node.js, MongoDB.",
-    detail:
-      "A capstone single page web application project. Users can create update or delete the post or comment on someone post. Authentication is required",
-    appLink: "https://nuanjan.github.io/post-me-client/#/",
-    ghFrontEndLink: "https://github.com/Nuanjan/post-me-client",
-    ghBackEndLink: "https://github.com/Nuanjan/post-me-api",
-  },
-  {
-    projectName: "Grocery Helper",
-    imgUrl: GroceryHelperImg,
-    technologies:
-      "jQuery, Handlebars, HTML, CSS, Atom, Bootstrap, Express.js, Ajex, Node.js, MongoDB.",
-    detail:
-      "Client can create, update, view and delete the grocery list. Authentication is required to use the app.",
-    appLink: "https://nuanjan.github.io/grocery-helper-client/",
-    ghFrontEndLink: "https://github.com/Nuanjan/grocery-helper-client",
-    ghBackEndLink: "https://github.com/Nuanjan/grocery-helper-api",
-  },
-  {
-    projectName: "ActivityHub",
-    imgUrl: ActivityHubImg,
-    technologies: "React, Firebase, Twilio API",
-    detail:
-      "ActivityHub is a General Assemly holiday Hackathon project. The purpose of this application is to connect people who missed the activity that they can join before the pandemic. This application was developed in a short amount of time, but it will help people connect together again!",
-    appLink: "https://video-activity-hub.herokuapp.com/",
-    ghFrontEndLink: "https://github.com/ActivityHub/video-activity-hub",
-    ghBackEndLink: "",
-  },
   {
     projectName: "Rice N Fire",
     imgUrl: RiceNFireImg,
@@ -45,5 +12,25 @@ export const PortfolioData = [
     appLink: "https://ricenfire.com/",
     ghbackEndLink: "",
     ghFrontendLink: "",
+  },
+  {
+    projectName: "Patriot",
+    imgUrl: PatriotsImg,
+    technologies: "React, Firebase, MUI, React-reveal",
+    detail:
+      "This is my front end project that I learn from React practice course, learn by practice on Udemy course.",
+    appLink: "https://patriot-827d1.web.app/",
+    ghFrontEndLink: "https://github.com/Nuanjan/patriots",
+    ghBackEndLink: "",
+  },
+  {
+    projectName: "ActivityHub",
+    imgUrl: ActivityHubImg,
+    technologies: "React, Firebase, Twilio API",
+    detail:
+      "ActivityHub is a General Assemly holiday Hackathon project. Client can connect with people who like the same activity during pandemic by create the meet up room base on activity categories",
+    appLink: "https://video-activity-hub.herokuapp.com/",
+    ghFrontEndLink: "https://github.com/ActivityHub/video-activity-hub",
+    ghBackEndLink: "",
   },
 ];

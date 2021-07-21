@@ -27,22 +27,8 @@ const App = () => {
   }, []);
   return (
     <AppContainer>
+      <Font />
       <Router>
-        <ResumeBtn slideDown={slideDown}>
-          <Link
-            to={{
-              pathname:
-                "https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing",
-            }}
-            target="_blank"
-            style={{ textDecoration: "none" }}
-          >
-            <ResumeBtnInside>
-              <span>RESUME</span>
-            </ResumeBtnInside>
-          </Link>
-        </ResumeBtn>
-        <Font />
         <Navbar open={open} setOpen={setOpen} />
         <Switch>
           <Route path="/" exact component={Home} />

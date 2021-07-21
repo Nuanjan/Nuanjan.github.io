@@ -1,10 +1,13 @@
 import styled, { keyframes } from "styled-components";
+import BackgorunImage from "./../../images/wallpaper-bg.png";
 
 export const AppContainer = styled.div`
-  background-color: #e4e1dc;
-
+  background-image: url(${BackgorunImage});
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
   @media (min-width: 1000px) {
-    display: flex;
     border: 1px solid transparent;
   }
 `;

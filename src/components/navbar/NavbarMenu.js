@@ -8,12 +8,6 @@ const NavbarMenu = ({ open, setOpen }) => {
       <Link to="/" onClick={() => setOpen(false)}>
         <a href="/">HOME</a>
       </Link>
-      <Link to="/portfolio" onClick={() => setOpen(false)}>
-        <a href="/">PROJECTS</a>
-      </Link>
-      <Link to="/contact" onClick={() => setOpen(false)}>
-        <a href="/">CONTACT</a>
-      </Link>
       <a
         href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
         target="_blank"
@@ -21,6 +15,12 @@ const NavbarMenu = ({ open, setOpen }) => {
       >
         RESUME
       </a>
+      <Link to="/portfolio" onClick={() => setOpen(false)}>
+        <a href="/">PROJECTS</a>
+      </Link>
+      <Link to="/contact" onClick={() => setOpen(false)}>
+        <a href="/">CONTACT</a>
+      </Link>
     </StyledMenu>
   );
 };

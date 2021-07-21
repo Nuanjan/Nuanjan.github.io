@@ -1,20 +1,11 @@
 import styled from "styled-components";
-// darkbrown = 4b3830
-// likeBrown = 73533e
-// navyBlue = 232a3a
-// blackGray = 1f1c20
-// mocca = ac9289
-// lightBrownGray = d9cdc9
-// lightGray = e0dee9
-// grayBrow =7 36461
 
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  padding: 80px 0;
   justify-content: begin;
   align-items: center;
-  background: rgba(172, 146, 137, 0.9);
+  background: rgba(145, 88, 88, 0.9);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -27,7 +18,7 @@ export const StyledMenu = styled.nav`
     padding: 1.5rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #f5f6de;
+    color: #ffeaf6;
     text-decoration: none;
     transition: color 0.3s linear;
     font-size: 2.5rem;
@@ -41,7 +32,7 @@ export const StyledMenu = styled.nav`
     bottom: 0;
     left: 0;
     background-color: #232a3a;
-    background: linear-gradient(0.15turn, #232a3a, #d9cdc9, #73533e);
+    background: linear-gradient(0.15turn, #fb2dc0, #ffe45e, #0ef9e6);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -55,7 +46,6 @@ export const StyledMenu = styled.nav`
     height: 100%;
     justify-content: space-around;
     transform: none;
-    padding: 0 10px 0 15px;
   }
   a {
     justify-self: start;
@@ -109,4 +99,10 @@ export const StyledBurger = styled.button`
   }
 `;
 
-export const NavbarWrapper = styled.div``;
+export const NavbarWrapper = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 305px;
+`;

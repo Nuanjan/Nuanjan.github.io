@@ -61,28 +61,16 @@ const bounce = keyframes`{
 }`;
 
 export const ParagraphContainer = styled.div`
-  overflow: hidden;
-  margin-top: 100px;
-  padding: 20%;
-  color: #2c2414;
-  font-size: 1rem;
-  text-align: center;
-  z-index: 0;
-  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
   animation: ${slideUp} 3.2s ease;
-
-  @media (min-width: 1000px) {
-    font-size: 2.2rem;
-    line-height: 2.5;
-    font-weight: 600;
-    margin-top: 50px;
-    padding: 10%;
-  }
 `;
 
 export const TextSpan = styled.span`
-  font-size: 2.5rem;
-	font-weight:  600;
+  font-size: 2.8rem;
+	font-family: 'Sigmar One', cursive;
 	letter-spacing: 2px;
 	text-align: center;
   background-color: #0cbaba;
@@ -98,10 +86,9 @@ export const TextSpan = styled.span`
         #476098 66.666%, 
         #476098 83.333%, 
         #6b0f1a 83.333%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        animation: ${rainbowTextSimpleAnimationRev} 1s ease forwards;
-
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: ${rainbowTextSimpleAnimationRev} 1s ease forwards;
     &:hover {
         animation: ${rainbowTextSimpleAnimation} 0.6s ease-in forwards;  
     }
@@ -117,4 +104,14 @@ export const ArrowWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-conten: center;
+`;
+
+export const AboutMeText = styled.p`
+  text-align: center;
+  color: #311432;
+  font-size: 1.8rem;
+  line-height: 1.5;
+`;
+export const AboutMeHeader = styled.h1`
+  color: #3c1361;
 `;
