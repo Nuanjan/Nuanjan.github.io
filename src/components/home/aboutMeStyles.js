@@ -45,31 +45,15 @@ const rainbowTextSimpleAnimation = keyframes`{
     }
 }`;
 
-const bounce = keyframes`{
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}`;
-
 export const ParagraphContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
   animation: ${slideUp} 3.2s ease;
 `;
 
 export const TextSpan = styled.span`
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 	font-family: 'Sigmar One', cursive;
 	letter-spacing: 2px;
 	text-align: center;
@@ -109,9 +93,42 @@ export const ArrowWrapper = styled.div`
 export const AboutMeText = styled.p`
   text-align: center;
   color: #311432;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+  padding: 50px;
+  @media (min-width: 1000px) {
+  }
 `;
 export const AboutMeHeader = styled.h1`
   color: #3c1361;
+  padding: 20px;
+`;
+export const BackGroundImage = styled.div`
+  width: 90%;
+  position: relative;
+`;
+export const HomeContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1000px) {
+    width: calc(100% - 305px);
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+`;
+
+export const AboutMeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 `;

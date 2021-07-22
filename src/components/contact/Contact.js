@@ -1,6 +1,5 @@
 import React from "react";
 import Content from "./../content/Content";
-import BackgroundImg from "./../content/BackgroundImg";
 import { GiVibratingSmartphone } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import {
@@ -82,7 +81,6 @@ const Contact = () => {
           </div>
         </div>
       </ContactMeContainer>
-      <BackgroundImg />
     </Content>
   );
 };

@@ -30,6 +30,7 @@ const App = () => {
       <Font />
       <Router>
         <Navbar open={open} setOpen={setOpen} />
+
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" component={Portfolio} />

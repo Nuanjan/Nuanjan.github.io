@@ -1,6 +1,6 @@
 import React from "react";
-import { BackGroundImage } from "./contentStyles";
-import bgImage from "../../images/portfolio-bg.png";
+import { BackGroundImage } from "./aboutMeStyles";
+import bgImage from "../../images/portfolio-bg-line.png";
 
 const BackgroundImg = () => {
   return (
@@ -10,6 +10,8 @@ const BackgroundImg = () => {
         alt="me and my pugs"
         style={{
           objectFit: "contain",
+          width: "90%",
+          margin: "20px",
         }}
       />
     </BackGroundImage>

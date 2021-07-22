@@ -15,10 +15,10 @@ const NavbarMenu = ({ open, setOpen }) => {
       >
         RESUME
       </a>
-      <Link to="/portfolio" onClick={() => setOpen(false)}>
+      <Link to="portfolio" onClick={() => setOpen(false)}>
         <a href="/">PROJECTS</a>
       </Link>
-      <Link to="/contact" onClick={() => setOpen(false)}>
+      <Link to="contact" onClick={() => setOpen(false)}>
         <a href="/">CONTACT</a>
       </Link>
     </StyledMenu>

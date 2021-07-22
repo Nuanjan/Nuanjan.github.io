@@ -6,82 +6,73 @@ export const PortfolioHeader = styled.div`
 `;
 
 export const PortfolioText = styled.h1`
-  color: #232a3a;
+  color: #afc0c9;
   font-size: 2em;
-  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  text-shadow: 1px 1px 2px #1d323f, 0 0 1em #dcdbe2, 0 0 0.2em #d4d7db;
 `;
 
 export const PortfolioContainer = styled.section`
+  background-color: #1d323f;
   display: flex;
   flex-direction: column;
-  height: 600px;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 `;
+
 export const PortfolioCardWrap = styled.div`
+  height: 90%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 600px;
+  flex-wrap: wrap;
   @media (min-width: 1000px) {
     flex-direction: row;
-    height: 500px;
-    width: 100%;
   }
 `;
 export const PortfolioCard = styled.div`
-  display: flex;
-  height: 90%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 80%;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(transparent, #7c5295);
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.1),
-    0 3.7px 3.3px rgba(0, 0, 0, 0.06), 0 0 0 rgba(0, 0, 0, 0.1),
-    0 10.3px 17.9px rgba(0, 0, 0, 0.5), 0 41.8px 33.4px rgba(0, 0, 0, 0.3),
-    0 100px 80px rgba(0, 0, 0, 0.2);
+  background-color: #f5fffa;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+  -o-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   @media (min-width: 1000px) {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
-    width: 80%;
+    max-width: 45%;
+    margin: 20px;
+    min-height: 600px;
   }
 `;
 
 // export const PortfolioImageDiv = styled.div``;
 export const PortfolioImage = styled.img`
   object-fit: cover;
+  border: solid black 1px;
   width: 100%;
-  @media (min-width: 100px) {
-    width: 40%;
-  }
+  height: 100%;
 `;
 export const PortfolioInformation = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 const ParentBtn = styled.button`
+  color: #afc0c9;
   width: 90%;
-  height: 90%;
-  margin: 0 auto;
+  margin: 10px auto;
   box-sizing: border-box;
   appearance: none;
-  background-color: #e6ffe3;
-  border: 2px solid #acffab;
+  background-color: #20334c;
+  border: 2px solid #d3dae4;
   border-radius: 0.6em;
   cursor: pointer;
 `;
 
 export const InheriteBtn = styled(ParentBtn)`
-  color: #4b3830;
-  background-image: linear-gradient(45deg, #90ee90 50%, transparent 50%);
+  color: #afc0c9;
+  background-image: linear-gradient(45deg, #476176 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: background 300ms ease-in-out;
@@ -89,7 +80,7 @@ export const InheriteBtn = styled(ParentBtn)`
   align-items: center;
   &:hover {
     background-position: 0;
-    color: #4b3830;
+    color: #afc0c9;
   }
   @media (min-width: 1000px) {
     height: 30px;
@@ -119,7 +110,8 @@ export const PortfolioProjectText = styled.p`
 `;
 
 export const ButtonText = styled.p`
-  font-size: 0.6rem;
+  color: #afc0c9;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 1;
   text-decoration: none;

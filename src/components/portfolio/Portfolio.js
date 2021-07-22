@@ -5,16 +5,15 @@ import {
   PortfolioText,
 } from "./portfolioStyles";
 import PortfolioDetail from "./PortfolioDetail";
-import Content from "./../content/Content";
 
 const Portfolio = () => {
   return (
-    <Content>
+    <PortfolioContainer>
       <PortfolioHeader>
         <PortfolioText>PROJECTS</PortfolioText>
       </PortfolioHeader>
       <PortfolioDetail />
-    </Content>
+    </PortfolioContainer>
   );
 };
 
