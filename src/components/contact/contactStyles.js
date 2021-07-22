@@ -15,29 +15,12 @@ export const SocialMediaWrapper = styled.div`
     margin-right: 50px;
   }
 `;
-export const ContactMeFlexbox = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 50px;
-`;
 
 export const ContactMeContainer = styled.div`
-  border: 3px solid #4b3830;
-  position: relative;
-  width: 80%;
+  width: 100%;
 `;
 
-export const ContactHeader = styled.h1`
-  position: absolute;
-  top: -40px;
-  left: 50px;
-  background: #fff;
-  padding: 0 20px;
-  background-color: #d4d7db;
-  color: #4f4a41;
-`;
+export const ContactHeader = styled.h1``;
 
 export const ContactIcon = styled.div`
   display: flex;

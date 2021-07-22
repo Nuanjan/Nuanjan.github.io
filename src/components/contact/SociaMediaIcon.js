@@ -6,7 +6,7 @@ import {
   TiSocialGithubCircular,
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { SocialMediaBtnContainer, SocialMediaWrapper } from "./contactStyles";
+import { SocialMediaBtnContainer } from "./contactStyles";
 const SociaMediaIcon = () => {
   return (
     <SocialMediaBtnContainer>

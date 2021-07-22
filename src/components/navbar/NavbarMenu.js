@@ -1,26 +1,26 @@
 import React from "react";
 import { StyledMenu } from "./navbarStyles";
-import { Link } from "react-router-dom";
 
 const NavbarMenu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <Link to="/" onClick={() => setOpen(false)}>
-        <a href="/">HOME</a>
-      </Link>
+      <a href="#aboutMe" onClick={() => setOpen(false)}>
+        HOME
+      </a>
       <a
         href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
         target="_blank"
+        rel="noreferrer"
         onClick={() => setOpen(false)}
       >
         RESUME
       </a>
-      <Link to="portfolio" onClick={() => setOpen(false)}>
-        <a href="/">PROJECTS</a>
-      </Link>
-      <Link to="contact" onClick={() => setOpen(false)}>
-        <a href="/">CONTACT</a>
-      </Link>
+      <a href="#projects" onClick={() => setOpen(false)}>
+        PROJECTS
+      </a>
+      <a href="#contact" onClick={() => setOpen(false)}>
+        CONTACT
+      </a>
     </StyledMenu>
   );
 };

@@ -4,7 +4,7 @@ import PortfolioDetail from "./PortfolioDetail";
 
 const Portfolio = () => {
   return (
-    <PortfolioContainer>
+    <PortfolioContainer id="projects">
       <PortfolioText>PROJECTS</PortfolioText>
       <PortfolioDetail />
     </PortfolioContainer>

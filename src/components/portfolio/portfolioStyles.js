@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import colors from "../../globalStyles/colorStyles";
 export const PortfolioHeader = styled.div`
   display: flex;
@@ -15,11 +15,14 @@ export const PortfolioText = styled.h1`
 export const PortfolioContainer = styled.section`
   background-color: ${colors.lightGray};
   display: flex;
-  padding: 50px 60px;
+  padding: 50px 40px;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
   height: 100%;
+  @media (min-width: 1200px) {
+    padding: 50px 60px;
+  }
 `;
 
 export const PortfolioCardWrap = styled.div`
@@ -34,16 +37,18 @@ export const PortfolioCardWrap = styled.div`
   }
 `;
 export const PortfolioCard = styled.div`
-  width: 80%;
   border: solid ${colors.black} 3px;
   background-color: #f5fffa;
-  margin: 20px;
+  margin-top: 20px;
+
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   -moz-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   -o-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   @media (min-width: 1000px) {
     max-width: 400px;
+    margin: 20px;
+    width: 80%;
   }
 `;
 

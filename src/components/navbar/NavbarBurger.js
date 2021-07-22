@@ -1,33 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { StyledBurger } from "./navbarStyles";
 
 const NavbarBurger = ({ open, setOpen }) => {
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
-  const controlBurger = () => {
-    if (window.scrollY > 100) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-  };
+  // const controlBurger = () => {
+  //   if (window.scrollY > 100) {
+  //     setShow(false);
+  //   } else {
+  //     setShow(true);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", controlBurger);
-    return () => {
-      window.removeEventListener("scroll", controlBurger);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", controlBurger);
+  //   return () => {
+  //     window.removeEventListener("scroll", controlBurger);
+  //   };
+  // }, []);
   return (
-    <div>
-      {show && (
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
-          <div />
-          <div />
-          <div />
-        </StyledBurger>
-      )}
-    </div>
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <div />
+      <div />
+      <div />
+    </StyledBurger>
   );
 };
 

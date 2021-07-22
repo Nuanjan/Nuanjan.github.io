@@ -12,8 +12,6 @@ import {
   PortfolioProjectName,
   PortfolioProjectText,
   PortfolioCardWrap,
-  ButtonText,
-  ProtfolioCardContainer,
   PortfolioProjectTechnologies,
   PortfolioContentContainer,
 } from "./portfolioStyles";

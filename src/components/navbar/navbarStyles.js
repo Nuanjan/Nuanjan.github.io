@@ -5,13 +5,13 @@ export const StyledMenu = styled.nav`
   background-color: ${colors.darkBlue};
   display: flex;
   flex-direction: column;
-  justify-content: begin;
+  justify-content: space-around;
   align-items: center;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: all 0.5s ease-in-out;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 50;
   height: 100%;
   a {
     margin-top: 50px;
@@ -33,8 +33,8 @@ export const StyledMenu = styled.nav`
     height: 2.5px;
     bottom: 0;
     left: 0;
-    background-color: #232a3a;
-    background: linear-gradient(0.15turn, #1d323f);
+    background-color: ${colors.coolWhite};
+    background: linear-gradient(0.15turn, ${colors.coolWhite});
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -78,7 +78,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#20334c" : "#20334c")};
+    background: ${({ open }) => (open ? colors.coolWhite : "#20334c")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
