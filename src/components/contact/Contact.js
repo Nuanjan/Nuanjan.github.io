@@ -6,32 +6,35 @@ import { HiOutlineMail } from "react-icons/hi";
 import {
   ContactMeContainer,
   ContactHeader,
-  ContactIcon,
+  ContactWrapper,
   IconSpan,
   TextParagraph,
+  GetInTouchHeader,
 } from "./contactStyles";
 const Contact = () => {
   return (
     <ContainerWithResumeAndImage>
       <ContactMeContainer>
         <ContactHeader id="contact">Contact Me</ContactHeader>
-        <h2>Let's get in touch</h2>
+        <GetInTouchHeader>Let's get in touch</GetInTouchHeader>
         <h2>Name</h2>
-        <TextParagraph>Nuanjan Schluntz (Noon)</TextParagraph>
+        <ContactWrapper>
+          <TextParagraph>Nuanjan Schluntz (Noon)</TextParagraph>
+        </ContactWrapper>
         <h2>Number</h2>
-        <ContactIcon>
+        <ContactWrapper>
           <IconSpan>
             <GiVibratingSmartphone size="20px" />
           </IconSpan>
           <TextParagraph>(857) 265 5359</TextParagraph>
-        </ContactIcon>
+        </ContactWrapper>
         <h2>Email</h2>
-        <ContactIcon>
+        <ContactWrapper>
           <IconSpan>
             <HiOutlineMail size="20px" />
           </IconSpan>
           <TextParagraph>nuanjan.schluntz@gmail.com</TextParagraph>
-        </ContactIcon>
+        </ContactWrapper>
       </ContactMeContainer>
     </ContainerWithResumeAndImage>
   );

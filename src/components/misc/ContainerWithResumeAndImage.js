@@ -15,13 +15,13 @@ const ContainerWithResumeAndImage = (props) => {
       <ParagraphContainer>{props.children}</ParagraphContainer>
       <ImageAndBtnContainer>
         <LinkContainer>
+          <SocialMediaIcon />
           <ResumeLink
             href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
             target="_blank"
           >
             RESUME
           </ResumeLink>
-          <SocialMediaIcon />
         </LinkContainer>
         <BackgroundImg />
       </ImageAndBtnContainer>

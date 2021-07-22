@@ -11,7 +11,7 @@ export const ProjectsContainer = styled.section`
   justify-content: space-around;
   width: 100%;
   height: 100%;
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     padding: 50px 60px;
   }
 `;
@@ -34,7 +34,7 @@ export const ProjectCard = styled.div`
   -moz-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   -o-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
-  @media (min-width: 1000px) {
+  @media (min-width: 500px) {
     max-width: 400px;
     margin: 20px;
     width: 80%;
@@ -77,7 +77,7 @@ export const ProjectCardWrap = styled.div`
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     flex-direction: row;
   }
 `;

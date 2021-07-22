@@ -67,11 +67,13 @@ export const AboutMeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 50px 40px;
-  @media (min-width: 1200px) {
+
+  @media (min-width: 1000px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 50px 60px;
+    width: 100%;
   }
 `;
 export const ParagraphContainer = styled.div`
@@ -81,7 +83,7 @@ export const ParagraphContainer = styled.div`
   justify-content: center;
   animation: ${slideUp} 3.2s ease;
   min-width: 320px;
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     width: 40%;
   }
 `;
@@ -103,7 +105,7 @@ export const ResumeLink = styled.a`
 	display: inline-block;
 	border: dotted ${colors.coolWhite} 3px;
   padding:10px 20px;
-  margin-bottom: 50px;
+  margin: 50px 0;
   background-color: #0cbaba;
 	background-image: linear-gradient(
         315deg,
@@ -125,7 +127,7 @@ export const ResumeLink = styled.a`
   &:hover{
     transform: scale(1.1);
   }
-  @medai(min-width: 1200px) {
+  @medai(min-width: 1000px) {
     margin-bottom: 20px;
   }
 `;
