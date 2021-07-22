@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.e5228952.chunk.js",
-    "main.js.map": "/static/js/main.e5228952.chunk.js.map",
+    "main.js": "/static/js/main.c23f4c97.chunk.js",
+    "main.js.map": "/static/js/main.c23f4c97.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf3f89e5.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf3f89e5.js.map",
-    "static/js/2.3d22fa92.chunk.js": "/static/js/2.3d22fa92.chunk.js",
-    "static/js/2.3d22fa92.chunk.js.map": "/static/js/2.3d22fa92.chunk.js.map",
+    "static/js/2.e783f6dc.chunk.js": "/static/js/2.e783f6dc.chunk.js",
+    "static/js/2.e783f6dc.chunk.js.map": "/static/js/2.e783f6dc.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.3d22fa92.chunk.js.LICENSE.txt": "/static/js/2.3d22fa92.chunk.js.LICENSE.txt",
-    "static/media/activity-hub.63d06240.png": "/static/media/activity-hub.63d06240.png",
-    "static/media/grocery-helper.2bd3fc82.png": "/static/media/grocery-helper.2bd3fc82.png",
-    "static/media/portfolio-bg.becc6fa1.png": "/static/media/portfolio-bg.becc6fa1.png",
-    "static/media/post-me.b4a1a8ce.png": "/static/media/post-me.b4a1a8ce.png",
-    "static/media/rice-n-fire.0001e0a8.png": "/static/media/rice-n-fire.0001e0a8.png"
+    "static/js/2.e783f6dc.chunk.js.LICENSE.txt": "/static/js/2.e783f6dc.chunk.js.LICENSE.txt",
+    "static/media/activity-hub.25f15877.png": "/static/media/activity-hub.25f15877.png",
+    "static/media/patriots.5ecec875.png": "/static/media/patriots.5ecec875.png",
+    "static/media/portfolio-bg.2fd9a43e.png": "/static/media/portfolio-bg.2fd9a43e.png",
+    "static/media/rice-n-fire.4657060a.png": "/static/media/rice-n-fire.4657060a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bf3f89e5.js",
-    "static/js/2.3d22fa92.chunk.js",
-    "static/js/main.e5228952.chunk.js"
+    "static/js/2.e783f6dc.chunk.js",
+    "static/js/main.c23f4c97.chunk.js"
   ]
 }
