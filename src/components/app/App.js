@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
-import { Font } from "../../fonts/Font";
+import { Font } from "../../globalStyles/Font";
 import Home from "./../home/Home";
 import Portfolio from "./../portfolio/Portfolio";
 import Contact from "./../contact/Contact";

@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-
+import colors from "../../globalStyles/colorStyles";
 const slideUp = keyframes`
 0%{
   transform: translateY(100%);
@@ -9,14 +9,14 @@ const slideUp = keyframes`
 }
 
 `;
-const slideDown = keyframes`
-0%{
-  transform: translateY(-100%);
-}
-100%{
-  transform: translateY(0);
-}
 
+const bigger = keyframes`
+0% {
+  transform: scale(0);
+}
+100% {
+  transform: scale(0.5);
+}
 `;
 
 const rainbowTextSimpleAnimationRev = keyframes`
@@ -49,7 +49,12 @@ export const ParagraphContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   animation: ${slideUp} 3.2s ease;
+  min-width: 320px;
+  @media (min-width: 1200px) {
+    width: 40%;
+  }
 `;
 
 export const TextSpan = styled.span`
@@ -91,21 +96,24 @@ export const ArrowWrapper = styled.div`
 `;
 
 export const AboutMeText = styled.p`
-  text-align: center;
-  color: #311432;
+  text-indent: 40px;
+  text-align: justify;
+  color: ${colors.darkBlue};
   font-size: 1.5rem;
   line-height: 1.5;
-  padding: 50px;
   @media (min-width: 1000px) {
   }
 `;
 export const AboutMeHeader = styled.h1`
-  color: #3c1361;
-  padding: 20px;
+  color: ${colors.darkBlue};
+  text-align: center;
+  margin-top: 100px;
+  @media (min-width: 1000px) {
+    margin-top: 0;
+  }
 `;
 export const BackGroundImage = styled.div`
   width: 90%;
-  position: relative;
 `;
 export const HomeContainer = styled.div`
   width: 100%;
@@ -126,9 +134,41 @@ export const AboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px 60px;
   @media (min-width: 1200px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
+`;
+
+export const ImageAndBtnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+`;
+export const ResumeLink = styled.a`
+  text-decoration: none;
+  color: #4f4a41;
+  font-size: 2rem;
+  color: #20334c
+	text-transform: uppercase;
+	text-decoration: none;
+	background: transparent;
+	border-radius: 30px;
+	display: inline-block;
+	border: dashed black 2px;
+  padding:10px 20px;
+  margin-bottom: 20px;
+  &:hover{
+    transform: scale(1.2);
+  }
+`;
+
+export const LinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
 `;

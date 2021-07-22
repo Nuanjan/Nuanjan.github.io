@@ -1,10 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import BackgorunImage from "./../../images/wallpaper-bg.png";
-
+import colors from "../../globalStyles/colorStyles";
 export const AppContainer = styled.div`
-  // background-image: url(${BackgorunImage});
-  // background-size: cover;
-  background-color: #d4d7db;
+  background-color: ${colors.coolWhite};
   width: 100vw;
   display: flex;
   @media (min-width: 1000px) {

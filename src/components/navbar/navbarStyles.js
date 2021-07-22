@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import colors from "../../globalStyles/colorStyles";
 
 export const StyledMenu = styled.nav`
-  background-color: rgb(211, 218, 228, 0.8);
+  background-color: ${colors.darkBlue};
   display: flex;
   flex-direction: column;
   justify-content: begin;
@@ -19,7 +20,7 @@ export const StyledMenu = styled.nav`
     padding: 1.5rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #20334c;
+    color: ${colors.coolWhite};
     text-decoration: none;
     transition: color 0.3s linear;
     font-size: 2rem;
@@ -48,7 +49,6 @@ export const StyledMenu = styled.nav`
     height: 100%;
     justify-content: space-around;
     transform: none;
-    background-color: transparent;
   }
   a {
     justify-self: start;

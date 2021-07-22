@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const SocialMediaBtnContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  @media (min-width: 1000px) {
-    justify-content: start;
-  }
+  width: 100%;
 `;
 
 export const SocialMediaWrapper = styled.div`
@@ -17,14 +15,18 @@ export const SocialMediaWrapper = styled.div`
     margin-right: 50px;
   }
 `;
+export const ContactMeFlexbox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+`;
 
 export const ContactMeContainer = styled.div`
   border: 3px solid #4b3830;
   position: relative;
-
-  @media (min-width: 1000px) {
-    width: 80%;
-  }
+  width: 80%;
 `;
 
 export const ContactHeader = styled.h1`
@@ -33,7 +35,7 @@ export const ContactHeader = styled.h1`
   left: 50px;
   background: #fff;
   padding: 0 20px;
-  background-color: #e4e1dc;
+  background-color: #d4d7db;
   color: #4f4a41;
 `;
 
@@ -50,5 +52,12 @@ export const IconSpan = styled.span`
 `;
 
 export const TextParagraph = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+`;
+
+export const ContactMeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 `;

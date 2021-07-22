@@ -1,17 +1,11 @@
 import React from "react";
-import {
-  PortfolioContainer,
-  PortfolioHeader,
-  PortfolioText,
-} from "./portfolioStyles";
+import { PortfolioContainer, PortfolioText } from "./portfolioStyles";
 import PortfolioDetail from "./PortfolioDetail";
 
 const Portfolio = () => {
   return (
     <PortfolioContainer>
-      <PortfolioHeader>
-        <PortfolioText>PROJECTS</PortfolioText>
-      </PortfolioHeader>
+      <PortfolioText>PROJECTS</PortfolioText>
       <PortfolioDetail />
     </PortfolioContainer>
   );

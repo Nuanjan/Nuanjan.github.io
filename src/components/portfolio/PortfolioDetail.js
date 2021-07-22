@@ -14,6 +14,8 @@ import {
   PortfolioCardWrap,
   ButtonText,
   ProtfolioCardContainer,
+  PortfolioProjectTechnologies,
+  PortfolioContentContainer,
 } from "./portfolioStyles";
 import { PortfolioData } from "./PortfolioData";
 
@@ -22,12 +24,14 @@ const PortfolioDetail = () => {
     <PortfolioCard key={index}>
       <PortfolioImage src={port.imgUrl} />
       <PortfolioInformation>
-        <PortfolioProjectName>{port.projectName}</PortfolioProjectName>
-        <PortfolioProjectText>
-          <span>Techlologies: </span>
-          {port.technologies}
-        </PortfolioProjectText>
-        <PortfolioProjectText>{port.detail}</PortfolioProjectText>
+        <PortfolioContentContainer>
+          <PortfolioProjectName>{port.projectName}</PortfolioProjectName>
+          <PortfolioProjectTechnologies>
+            <span>Technologies: </span>
+            {port.technologies}
+          </PortfolioProjectTechnologies>
+          <PortfolioProjectText>{port.detail}</PortfolioProjectText>
+        </PortfolioContentContainer>
         <BtnContainer>
           <Link
             to={{ pathname: port.appLink }}
@@ -36,9 +40,9 @@ const PortfolioDetail = () => {
           >
             <InheriteBtn>
               <IconSpan>
-                <CgWebsite size="20px" />
+                <CgWebsite size="30px" />
               </IconSpan>
-              <ButtonText>App Link</ButtonText>
+              Demo
             </InheriteBtn>
           </Link>
           {port.ghFrontEndLink && (
@@ -49,9 +53,9 @@ const PortfolioDetail = () => {
             >
               <InheriteBtn>
                 <IconSpan>
-                  <FaGithub size="20px" />
+                  <FaGithub size="30px" />
                 </IconSpan>
-                <ButtonText>GitHub FrontEnd Link</ButtonText>
+                Code
               </InheriteBtn>
             </Link>
           )}
@@ -63,9 +67,9 @@ const PortfolioDetail = () => {
             >
               <InheriteBtn>
                 <IconSpan>
-                  <FaGithub size="20px" />
+                  <FaGithub size="30px" />
                 </IconSpan>
-                <ButtonText>GitHub BackEnd Link</ButtonText>
+                Code
               </InheriteBtn>
             </Link>
           )}

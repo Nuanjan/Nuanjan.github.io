@@ -2,6 +2,7 @@ import React from "react";
 import BackgroundImg from "./BackgroundImg";
 import Portfolio from "./../portfolio/Portfolio";
 import Contact from "../contact/Contact";
+import SociaMediaIcon from "../contact/SociaMediaIcon";
 import {
   ParagraphContainer,
   TextSpan,
@@ -9,6 +10,9 @@ import {
   AboutMeHeader,
   HomeContainer,
   AboutMeContainer,
+  ImageAndBtnContainer,
+  ResumeLink,
+  LinkContainer,
 } from "./aboutMeStyles";
 
 const Home = () => {
@@ -30,7 +34,19 @@ const Home = () => {
             strong work ethic that I will bring with me everyday.
           </AboutMeText>
         </ParagraphContainer>
-        <BackgroundImg />
+        <ImageAndBtnContainer>
+          <LinkContainer>
+            <ResumeLink
+              href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
+              target="_blank"
+            >
+              RESUME
+            </ResumeLink>
+
+            <SociaMediaIcon />
+          </LinkContainer>
+          <BackgroundImg />
+        </ImageAndBtnContainer>
       </AboutMeContainer>
       <Portfolio />
       <Contact />
