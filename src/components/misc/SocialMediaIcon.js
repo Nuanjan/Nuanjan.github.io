@@ -6,17 +6,15 @@ import {
   TiSocialGithubCircular,
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { SocialMediaBtnContainer } from "./contactStyles";
-const SociaMediaIcon = () => {
+import { SocialMediaBtnContainer } from "./miscStyles";
+const SocialMediaIcon = () => {
   return (
     <SocialMediaBtnContainer>
       <Link
         to={{ pathname: "https://twitter.com/NuanjanSchluntz" }}
         target="_blank"
       >
-        {/* <SocialMediaWrapper> */}
         <TiSocialTwitterCircular size="60px" color={colors.socialLink} />
-        {/* </SocialMediaWrapper> */}
       </Link>
       <Link
         to={{
@@ -24,17 +22,13 @@ const SociaMediaIcon = () => {
         }}
         target="_blank"
       >
-        {/* <SocialMediaWrapper> */}
         <TiSocialLinkedinCircular size="60px" color={colors.socialLink} />
-        {/* </SocialMediaWrapper> */}
       </Link>
       <Link to={{ pathname: "https://github.com/Nuanjan" }} target="_blank">
-        {/* <SocialMediaWrapper> */}
         <TiSocialGithubCircular size="60px" color={colors.socialLink} />
-        {/* </SocialMediaWrapper> */}
       </Link>
     </SocialMediaBtnContainer>
   );
 };
 
-export default SociaMediaIcon;
+export default SocialMediaIcon;

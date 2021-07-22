@@ -2,7 +2,7 @@ import PatriotsImg from "./../../images/patriots.png";
 import ActivityHubImg from "./../../images/activity-hub.png";
 import RiceNFireImg from "./../../images/rice-n-fire.png";
 
-export const PortfolioData = [
+export const ProjectData = [
   {
     projectName: "Rice N Fire",
     imgUrl: RiceNFireImg,

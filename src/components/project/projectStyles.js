@@ -1,18 +1,9 @@
 import styled from "styled-components";
 import colors from "../../globalStyles/colorStyles";
-export const PortfolioHeader = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 
-export const PortfolioText = styled.h1`
-  color: ${colors.black};
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 15px;
-`;
+/*--------------- Project Container -------------------- */
 
-export const PortfolioContainer = styled.section`
+export const ProjectsContainer = styled.section`
   background-color: ${colors.lightGray};
   display: flex;
   padding: 50px 40px;
@@ -25,18 +16,16 @@ export const PortfolioContainer = styled.section`
   }
 `;
 
-export const PortfolioCardWrap = styled.div`
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  @media (min-width: 1000px) {
-    flex-direction: row;
-  }
+export const ProjectText = styled.h1`
+  color: ${colors.black};
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
 `;
-export const PortfolioCard = styled.div`
+
+/*-------------------- Project Card -------------------------- */
+
+export const ProjectCard = styled.div`
   border: solid ${colors.black} 3px;
   background-color: #f5fffa;
   margin-top: 20px;
@@ -51,24 +40,56 @@ export const PortfolioCard = styled.div`
     width: 80%;
   }
 `;
-
-// export const PortfolioImageDiv = styled.div``;
-export const PortfolioImage = styled.img`
+export const ProjectImage = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
 `;
-export const PortfolioInformation = styled.div`
+
+export const ProjectInformation = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
   min-height: 270px;
   justify-content: space-between;
 `;
-
-export const PortfolioContentContainer = styled.div`
+export const ProjectContentContainer = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const ProjectHeader = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Detail = styled.h1`
+  color: ${colors.black};
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+`;
+
+export const ProjectCardWrap = styled.div`
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+`;
+
+export const ProjectName = styled.h2``;
+
+export const ProjectTechnologies = styled.p`
+  margin-bottom: 20px;
+`;
+
+export const ProjectDetailText = styled.p`
+  margin-bottom: 20px;
 `;
 
 const ParentBtn = styled.button`
@@ -105,15 +126,6 @@ export const BtnContainer = styled.div`
 
 export const IconSpan = styled.span`
   margin-right: 10px;
-`;
-
-export const PortfolioProjectName = styled.h2``;
-
-export const PortfolioProjectTechnologies = styled.p`
-  margin-bottom: 20px;
-`;
-export const PortfolioProjectText = styled.p`
-  margin-bottom: 20px;
 `;
 
 export const ButtonText = styled.p`

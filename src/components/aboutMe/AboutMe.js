@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "../home/Home";
+import ContainerWithResumeAndImage from "../misc/ContainerWithResumeAndImage";
 import { AboutMeHeader, AboutMeText, TextSpan } from "./aboutMeStyles";
 
 const AboutMe = () => {
   return (
-    <Home>
+    <ContainerWithResumeAndImage>
       <AboutMeHeader id="aboutMe">
         Hi! My name is <TextSpan>NUANJAN,</TextSpan>
         <br />
@@ -18,7 +18,7 @@ const AboutMe = () => {
         growing my skills. One thing you can count on is the strong work ethic
         that I will bring with me everyday.
       </AboutMeText>
-    </Home>
+    </ContainerWithResumeAndImage>
   );
 };
 

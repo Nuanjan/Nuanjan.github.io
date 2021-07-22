@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import {
-  PortfolioImage,
-  PortfolioInformation,
-  InheriteBtn,
+  ProjectCard,
+  ProjectImage,
+  ProjectInformation,
+  ProjectContentContainer,
+  ProjectName,
+  ProjectTechnologies,
+  ProjectDetailText,
   BtnContainer,
+  InheriteBtn,
   IconSpan,
-  PortfolioCard,
-  PortfolioProjectName,
-  PortfolioProjectText,
-  PortfolioCardWrap,
-  PortfolioProjectTechnologies,
-  PortfolioContentContainer,
-} from "./portfolioStyles";
-import { PortfolioData } from "./PortfolioData";
+  ProjectCardWrap,
+} from "./projectStyles";
+import { ProjectData } from "./ProjectData";
 
-const PortfolioDetail = () => {
-  const portData = PortfolioData.map((port, index) => (
-    <PortfolioCard key={index}>
-      <PortfolioImage src={port.imgUrl} />
-      <PortfolioInformation>
-        <PortfolioContentContainer>
-          <PortfolioProjectName>{port.projectName}</PortfolioProjectName>
-          <PortfolioProjectTechnologies>
+const ProjectDetail = () => {
+  const portData = ProjectData.map((port, index) => (
+    <ProjectCard key={index}>
+      <ProjectImage src={port.imgUrl} />
+      <ProjectInformation>
+        <ProjectContentContainer>
+          <ProjectName>{port.projectName}</ProjectName>
+          <ProjectTechnologies>
             <span>Technologies: </span>
             {port.technologies}
-          </PortfolioProjectTechnologies>
-          <PortfolioProjectText>{port.detail}</PortfolioProjectText>
-        </PortfolioContentContainer>
+          </ProjectTechnologies>
+          <ProjectDetailText>{port.detail}</ProjectDetailText>
+        </ProjectContentContainer>
         <BtnContainer>
           <Link
             to={{ pathname: port.appLink }}
@@ -72,11 +72,11 @@ const PortfolioDetail = () => {
             </Link>
           )}
         </BtnContainer>
-      </PortfolioInformation>
-    </PortfolioCard>
+      </ProjectInformation>
+    </ProjectCard>
   ));
 
-  return <PortfolioCardWrap>{portData}</PortfolioCardWrap>;
+  return <ProjectCardWrap>{portData}</ProjectCardWrap>;
 };
 
-export default PortfolioDetail;
+export default ProjectDetail;

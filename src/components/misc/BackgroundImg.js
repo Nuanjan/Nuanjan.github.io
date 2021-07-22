@@ -1,5 +1,5 @@
 import React from "react";
-import { BackGroundImage } from "./homeStyles";
+import { BackGroundImage } from "./miscStyles";
 import bgImage from "../../images/portfolio-bg.png";
 
 const BackgroundImg = () => {
