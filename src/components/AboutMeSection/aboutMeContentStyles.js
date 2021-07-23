@@ -1,31 +1,31 @@
 import styled, { keyframes } from "styled-components";
 import colors from "../../globalStyles/colorStyles";
+import {
+  rainbowTextAnimation,
+  rainbowTextAnimationOnHover,
+} from "../../globalStyles/rainbowTextAnimation";
 
-const rainbowTextSimpleAnimationRev = keyframes`
-   {
-    0% {
-      background-size: 650%;
-    }
-    40% {
-      background-size: 650%;
-    }
-    100% {
-      background-size: 100%;
-    }
-  }
+/*---------- ParagraphContainer ------------*/
+const slideUp = keyframes`
+0%{
+  transform: translateY(100%);
+}
+100%{
+  transform: translateY(0);
+}
 `;
 
-const rainbowTextSimpleAnimation = keyframes`{
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
-}`;
+export const ParagraphContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: ${slideUp} 3.2s ease;
+  min-width: 320px;
+  @media (min-width: 1000px) {
+    width: 40%;
+  }
+`;
 
 export const AboutMeHeader = styled.h1`
   color: ${colors.darkBlue};
@@ -68,9 +68,9 @@ export const TextSpan = styled.span`
         #6b0f1a 83.333%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  animation: ${rainbowTextSimpleAnimationRev} 1s ease forwards;
+  animation: ${rainbowTextAnimation} 1s ease forwards;
     &:hover {
-        animation: ${rainbowTextSimpleAnimation} 0.6s ease-in forwards;  
+        animation: ${rainbowTextAnimationOnHover} 0.6s ease-in forwards;  
     }
 }
 `;

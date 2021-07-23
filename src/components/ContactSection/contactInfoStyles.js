@@ -9,6 +9,7 @@ export const ContactMeContainer = styled.div`
     align-items: flex-start;
   }
 `;
+
 export const ContactHeader = styled.h1`
   text-align: center;
 `;

@@ -1,68 +1,10 @@
+import React from "react";
 import styled from "styled-components";
 import colors from "../../globalStyles/colorStyles";
 
-/*------Navbar Containner------ */
-
-export const NavbarWrapper = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 305px;
-`;
-
-/*---------------Navbar Burger toggle button --------------*/
-
-export const StyledBurger = styled.button`
-  position: fixed;
-  top: 5%;
-  left: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1000;
-
-  &:focus {
-    outline: none;
-  }
-
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background: ${({ open }) => (open ? colors.coolWhite : "#20334c")};
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
-  }
-
-  @media (min-width: 1000px) {
-    display: none;
-  }
-`;
-
 /*---------------Navbar Menu and Link ----------------*/
 
-export const StyledMenu = styled.nav`
+export const NavbarDesktopContainer = styled.nav`
   background-color: ${colors.darkBlue};
   display: flex;
   flex-direction: column;
@@ -116,3 +58,29 @@ export const StyledMenu = styled.nav`
     margin-top: 0;
   }
 `;
+
+const NavbarDesktop = ({ open, setOpen }) => {
+  return (
+    <NavbarDesktopContainer open={open}>
+      <a href="#aboutMe" onClick={() => setOpen(false)}>
+        HOME
+      </a>
+      <a
+        href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+        onClick={() => setOpen(false)}
+      >
+        RESUME
+      </a>
+      <a href="#projects" onClick={() => setOpen(false)}>
+        PROJECTS
+      </a>
+      <a href="#contact" onClick={() => setOpen(false)}>
+        CONTACT
+      </a>
+    </NavbarDesktopContainer>
+  );
+};
+
+export default NavbarDesktop;

@@ -1,10 +1,14 @@
 import React from "react";
-import ContainerWithResumeAndImage from "../misc/ContainerWithResumeAndImage";
-import { AboutMeHeader, AboutMeText, TextSpan } from "./aboutMeStyles";
+import {
+  ParagraphContainer,
+  AboutMeHeader,
+  AboutMeText,
+  TextSpan,
+} from "./aboutMeContentStyles";
 
-const AboutMe = () => {
+const AboutMeContent = () => {
   return (
-    <ContainerWithResumeAndImage>
+    <ParagraphContainer>
       <AboutMeHeader id="aboutMe">
         Hi! My name is <TextSpan>NUANJAN,</TextSpan>
         <br />
@@ -18,8 +22,8 @@ const AboutMe = () => {
         growing my skills. One thing you can count on is the strong work ethic
         that I will bring with me everyday.
       </AboutMeText>
-    </ContainerWithResumeAndImage>
+    </ParagraphContainer>
   );
 };
 
-export default AboutMe;
+export default AboutMeContent;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import {
@@ -31,8 +30,8 @@ const ProjectDetail = () => {
           <ProjectDetailText>{port.detail}</ProjectDetailText>
         </ProjectContentContainer>
         <BtnContainer>
-          <Link
-            to={{ pathname: port.appLink }}
+          <a
+            href={port.appLink}
             target="_blank"
             style={{ textDecoration: "none" }}
           >
@@ -42,10 +41,10 @@ const ProjectDetail = () => {
               </IconSpan>
               Demo
             </InheriteBtn>
-          </Link>
+          </a>
           {port.ghFrontEndLink && (
-            <Link
-              to={{ pathname: port.ghFrontEndLink }}
+            <a
+              href={port.ghFrontEndLink}
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -55,11 +54,11 @@ const ProjectDetail = () => {
                 </IconSpan>
                 Code
               </InheriteBtn>
-            </Link>
+            </a>
           )}
           {port.ghBackEndLink && (
-            <Link
-              to={{ pathname: port.ghBackEndLink }}
+            <a
+              href={port.ghBackEndLink}
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -69,7 +68,7 @@ const ProjectDetail = () => {
                 </IconSpan>
                 Code
               </InheriteBtn>
-            </Link>
+            </a>
           )}
         </BtnContainer>
       </ProjectInformation>
