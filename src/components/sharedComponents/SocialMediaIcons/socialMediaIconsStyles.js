@@ -11,7 +11,7 @@ export const SocialMediaBtnContainer = styled.div`
 
 export const SocialMediaIcon = styled.div`
   border-radius: 25px;
-
+  cursor: pointer;
   margin: 30px auto;
 
   &: hover {

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { Font } from "../globalStyles/Font";
 import AboutMeSection from "./AboutMeSection";

@@ -4,11 +4,14 @@ import NavbarMobile from "./NavbarMobile";
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 305px;
+  width: 0;
+  @media (min-width: 1000px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 305px;
+  }
 `;
 
 const Navbar = ({ open, setOpen }) => {

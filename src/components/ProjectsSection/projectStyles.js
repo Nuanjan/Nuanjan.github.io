@@ -84,6 +84,7 @@ export const InheriteBtn = styled(ParentBtn)`
 `;
 
 export const BtnContainer = styled.div`
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   @media (min-width: 1000px) {

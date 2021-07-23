@@ -12,7 +12,6 @@ import {
   BtnContainer,
   InheriteBtn,
   IconSpan,
-  ProjectCardWrap,
 } from "./projectStyles";
 
 const ProjectCard = (props) => {
@@ -32,6 +31,8 @@ const ProjectCard = (props) => {
           <a
             href={props.project.appLink}
             target="_blank"
+            rel="noreferrer"
+            aria-label="link to my project demo"
             style={{ textDecoration: "none" }}
           >
             <InheriteBtn>
@@ -45,6 +46,8 @@ const ProjectCard = (props) => {
             <a
               href={props.project.ghFrontEndLink}
               target="_blank"
+              rel="noreferrer"
+              aria-label="link to my gitHub frontend code"
               style={{ textDecoration: "none" }}
             >
               <InheriteBtn>
@@ -59,6 +62,8 @@ const ProjectCard = (props) => {
             <a
               href={props.project.ghBackEndLink}
               target="_blank"
+              rel="noreferrer"
+              aria-label="link to my gitHub backend code"
               style={{ textDecoration: "none" }}
             >
               <InheriteBtn>
