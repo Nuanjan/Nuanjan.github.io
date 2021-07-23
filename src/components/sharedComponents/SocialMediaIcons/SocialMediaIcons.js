@@ -5,19 +5,29 @@ import {
   TiSocialTwitterCircular,
   TiSocialGithubCircular,
 } from "react-icons/ti";
-import { SocialMediaBtnContainer } from "./socialMediaIconsStyles";
+import {
+  SocialMediaBtnContainer,
+  SocialMediaIcon,
+} from "./socialMediaIconsStyles";
 
 const SocialMediaIcons = () => {
   return (
     <SocialMediaBtnContainer>
       <a href="https://twitter.com/NuanjanSchluntz" target="_blank">
-        <TiSocialTwitterCircular size="60px" color={colors.socialLink} />
+        <SocialMediaIcon>
+          <TiSocialTwitterCircular size="60px" color={colors.socialLink} />
+        </SocialMediaIcon>
       </a>
       <a href="https://www.linkedin.com/in/nuanjan-schluntz/" target="_blank">
-        <TiSocialLinkedinCircular size="60px" color={colors.socialLink} />
+        <SocialMediaIcon>
+          <TiSocialLinkedinCircular size="60px" color={colors.socialLink} />
+        </SocialMediaIcon>
       </a>
       <a href="https://github.com/Nuanjan" target="_blank">
-        <TiSocialGithubCircular size="60px" color={colors.socialLink} />
+        <SocialMediaIcon>
+          {" "}
+          <TiSocialGithubCircular size="60px" color={colors.socialLink} />
+        </SocialMediaIcon>
       </a>
     </SocialMediaBtnContainer>
   );

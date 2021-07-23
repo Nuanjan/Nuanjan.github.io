@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import colors from "../../globalStyles/colorStyles";
-
-/*---------------Navbar Menu and Link ----------------*/
+import { Link } from "react-scroll";
 
 export const NavbarDesktopContainer = styled.nav`
   background-color: ${colors.darkBlue};
@@ -62,9 +61,23 @@ export const NavbarDesktopContainer = styled.nav`
 const NavbarDesktop = ({ open, setOpen }) => {
   return (
     <NavbarDesktopContainer open={open}>
-      <a href="#aboutMe" onClick={() => setOpen(false)}>
-        HOME
-      </a>
+      <Link
+        activeClass="active"
+        to="aboutMe"
+        spy={true}
+        smooth={true}
+        delay={500}
+        duration={1500}
+      >
+        <a
+          href="#aboutMe"
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
+          HOME
+        </a>
+      </Link>
       <a
         href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
         target="_blank"
@@ -73,12 +86,16 @@ const NavbarDesktop = ({ open, setOpen }) => {
       >
         RESUME
       </a>
-      <a href="#projects" onClick={() => setOpen(false)}>
-        PROJECTS
-      </a>
-      <a href="#contact" onClick={() => setOpen(false)}>
-        CONTACT
-      </a>
+      <Link to="projects" spy={true} smooth={true} delay={500} duration={1500}>
+        <a href="#projects" onClick={() => setOpen(false)}>
+          PROJECTS
+        </a>
+      </Link>
+      <Link to="contact" spy={true} smooth={true} delay={500} duration={1500}>
+        <a href="#contact" onClick={() => setOpen(false)}>
+          CONTACT
+        </a>
+      </Link>
     </NavbarDesktopContainer>
   );
 };

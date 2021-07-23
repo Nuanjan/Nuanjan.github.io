@@ -1,11 +1,11 @@
-import PatriotsImg from "./../../images/patriots.png";
-import ActivityHubImg from "./../../images/activity-hub.png";
-import RiceNFireImg from "./../../images/rice-n-fire.png";
+import patriotsImg from "./../../images/patriots.png";
+import activityHubImg from "./../../images/activity-hub.png";
+import riceNFireImg from "./../../images/rice-n-fire.png";
 
-export const ProjectData = [
+export const projectData = [
   {
     projectName: "Rice N Fire",
-    imgUrl: RiceNFireImg,
+    imgUrl: riceNFireImg,
     technologies: "React, Bootstrap, MUI, firebase.",
     detail:
       "Indigo Award Winner 2021 in Restaurant/Cafe category as well as Mobile Responsive category. Worked across with marketing, design and developer team. Worked with agile principle to developed the project.",
@@ -15,7 +15,7 @@ export const ProjectData = [
   },
   {
     projectName: "Patriot",
-    imgUrl: PatriotsImg,
+    imgUrl: patriotsImg,
     technologies: "React, Firebase, MUI, React-reveal",
     detail:
       "This is my front end project that I learn from React practice course, learn by practice on Udemy course.",
@@ -25,7 +25,7 @@ export const ProjectData = [
   },
   {
     projectName: "ActivityHub",
-    imgUrl: ActivityHubImg,
+    imgUrl: activityHubImg,
     technologies: "React, Firebase, Twilio API",
     detail:
       "ActivityHub is a General Assemly holiday Hackathon project. Client can connect with people who like the same activity during pandemic by create the meet up room base on activity categories",

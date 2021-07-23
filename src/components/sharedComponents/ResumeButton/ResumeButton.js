@@ -1,48 +1,18 @@
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import colors from "../../../globalStyles/colorStyles";
+import {
+  rainbowTextAnimation,
+  rainbowTextAnimationOnHover,
+} from "../../../globalStyles/rainbowTextAnimation";
 
-export const ImageAndBtnContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-`;
-
-export const LinkContainer = styled.div`
+const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
 `;
-
-/*---------- ResumeLink ------------*/
-const rainbowTextSimpleAnimationRev = keyframes`
-   {
-    0% {
-      background-size: 650%;
-    }
-    40% {
-      background-size: 650%;
-    }
-    100% {
-      background-size: 100%;
-    }
-  }
-`;
-
-const rainbowTextSimpleAnimation = keyframes`{
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
-}`;
-
-export const ResumeLink = styled.a`
+const ResumeLink = styled.a`
   text-decoration: none;
   color: ${colors.coolWhite};
   font-size: 2.5rem;
@@ -55,6 +25,7 @@ export const ResumeLink = styled.a`
   padding:10px 20px;
   margin: 50px 0;
   background-color: #0cbaba;
+  box-shadow: 10px 9px 12px #383838;
 	background-image: linear-gradient(
         315deg,
         #09c5e4 16.666%, 
@@ -67,9 +38,9 @@ export const ResumeLink = styled.a`
         #476098 66.666%, 
         #476098 83.333%, 
         #6b0f1a 83.333%);
-  animation: ${rainbowTextSimpleAnimationRev} 1s ease forwards;
+  animation: ${rainbowTextAnimation} 1s ease forwards;
     &:hover {
-        animation: ${rainbowTextSimpleAnimation} 0.6s ease-in forwards;  
+        animation: ${rainbowTextAnimationOnHover} 0.6s ease-in forwards;  
     }
 }
   &:hover{
@@ -79,3 +50,18 @@ export const ResumeLink = styled.a`
     margin-bottom: 20px;
   }
 `;
+
+const ResumeButton = () => {
+  return (
+    <LinkContainer>
+      <ResumeLink
+        href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
+        target="_blank"
+      >
+        RESUME
+      </ResumeLink>
+    </LinkContainer>
+  );
+};
+
+export default ResumeButton;

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Navbar from "./navbar/Navbar";
+import React, { useState, useRef } from "react";
+import Navbar from "./Navbar";
 import { Font } from "../globalStyles/Font";
 import AboutMeSection from "./AboutMeSection";
-import Projects from "./projects/Projects";
+import ProjectsSection from "./ProjectsSection";
 import ContactSection from "./ContactSection";
 
 import { AppContainer, ContentContainer } from "./appStyles";
@@ -16,7 +16,7 @@ const App = () => {
       <Navbar open={open} setOpen={setOpen} />
       <ContentContainer>
         <AboutMeSection />
-        <Projects />
+        <ProjectsSection />
         <ContactSection />
       </ContentContainer>
     </AppContainer>

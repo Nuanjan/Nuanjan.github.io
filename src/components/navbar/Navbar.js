@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarMenu from "./NavbarMenu";
-import NavbarBurger from "./NavbarBurger";
+import NavbarDesktop from "./NavbarDesktop";
+import NavbarMobile from "./NavbarMobile";
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.div`
@@ -14,8 +14,8 @@ export const NavbarWrapper = styled.div`
 const Navbar = ({ open, setOpen }) => {
   return (
     <NavbarWrapper>
-      <NavbarBurger open={open} setOpen={setOpen} />
-      <NavbarMenu open={open} setOpen={setOpen} />
+      <NavbarMobile open={open} setOpen={setOpen} />
+      <NavbarDesktop open={open} setOpen={setOpen} />
     </NavbarWrapper>
   );
 };

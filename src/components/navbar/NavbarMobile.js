@@ -1,11 +1,8 @@
 import React from "react";
-import { NavbarMobileContainer } from "./navbarStyles";
 import styled from "styled-components";
 import colors from "../../globalStyles/colorStyles";
 
-/*---------------Navbar Burger toggle button --------------*/
-
-export const StyledBurger = styled.button`
+const NavbarMobileContainer = styled.button`
   position: fixed;
   top: 5%;
   left: 2rem;

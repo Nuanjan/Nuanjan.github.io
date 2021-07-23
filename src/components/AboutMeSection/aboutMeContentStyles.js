@@ -5,28 +5,6 @@ import {
   rainbowTextAnimationOnHover,
 } from "../../globalStyles/rainbowTextAnimation";
 
-/*---------- ParagraphContainer ------------*/
-const slideUp = keyframes`
-0%{
-  transform: translateY(100%);
-}
-100%{
-  transform: translateY(0);
-}
-`;
-
-export const ParagraphContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  animation: ${slideUp} 3.2s ease;
-  min-width: 320px;
-  @media (min-width: 1000px) {
-    width: 40%;
-  }
-`;
-
 export const AboutMeHeader = styled.h1`
   color: ${colors.darkBlue};
   text-align: center;

@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import {
-  ProjectCard,
+  ProjectCardContainer,
   ProjectImage,
   ProjectInformation,
   ProjectContentContainer,
@@ -14,24 +14,23 @@ import {
   IconSpan,
   ProjectCardWrap,
 } from "./projectStyles";
-import { ProjectData } from "./ProjectData";
 
-const ProjectDetail = () => {
-  const portData = ProjectData.map((port, index) => (
-    <ProjectCard key={index}>
-      <ProjectImage src={port.imgUrl} />
+const ProjectCard = (props) => {
+  return (
+    <ProjectCardContainer>
+      <ProjectImage src={props.project.imgUrl} />
       <ProjectInformation>
         <ProjectContentContainer>
-          <ProjectName>{port.projectName}</ProjectName>
+          <ProjectName>{props.project.projectName}</ProjectName>
           <ProjectTechnologies>
             <span>Technologies: </span>
-            {port.technologies}
+            {props.project.technologies}
           </ProjectTechnologies>
-          <ProjectDetailText>{port.detail}</ProjectDetailText>
+          <ProjectDetailText>{props.project.detail}</ProjectDetailText>
         </ProjectContentContainer>
         <BtnContainer>
           <a
-            href={port.appLink}
+            href={props.project.appLink}
             target="_blank"
             style={{ textDecoration: "none" }}
           >
@@ -42,9 +41,9 @@ const ProjectDetail = () => {
               Demo
             </InheriteBtn>
           </a>
-          {port.ghFrontEndLink && (
+          {props.project.ghFrontEndLink && (
             <a
-              href={port.ghFrontEndLink}
+              href={props.project.ghFrontEndLink}
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -56,9 +55,9 @@ const ProjectDetail = () => {
               </InheriteBtn>
             </a>
           )}
-          {port.ghBackEndLink && (
+          {props.project.ghBackEndLink && (
             <a
-              href={port.ghBackEndLink}
+              href={props.project.ghBackEndLink}
               target="_blank"
               style={{ textDecoration: "none" }}
             >
@@ -72,10 +71,8 @@ const ProjectDetail = () => {
           )}
         </BtnContainer>
       </ProjectInformation>
-    </ProjectCard>
-  ));
-
-  return <ProjectCardWrap>{portData}</ProjectCardWrap>;
+    </ProjectCardContainer>
+  );
 };
 
-export default ProjectDetail;
+export default ProjectCard;

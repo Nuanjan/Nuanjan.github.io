@@ -6,7 +6,6 @@ export const ContactMeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 1000px) {
-    align-items: flex-start;
   }
 `;
 
