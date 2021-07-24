@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.08aa39ad.chunk.js",
-    "main.js.map": "/static/js/main.08aa39ad.chunk.js.map",
+    "main.js": "/static/js/main.0c7e36fc.chunk.js",
+    "main.js.map": "/static/js/main.0c7e36fc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf3f89e5.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf3f89e5.js.map",
     "static/js/2.ecb3139d.chunk.js": "/static/js/2.ecb3139d.chunk.js",
     "static/js/2.ecb3139d.chunk.js.map": "/static/js/2.ecb3139d.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.ecb3139d.chunk.js.LICENSE.txt": "/static/js/2.ecb3139d.chunk.js.LICENSE.txt",
-    "static/media/activity-hub.25f15877.png": "/static/media/activity-hub.25f15877.png",
-    "static/media/patriots.5ecec875.png": "/static/media/patriots.5ecec875.png",
+    "static/media/activity-hub.89d0d4c8.png": "/static/media/activity-hub.89d0d4c8.png",
+    "static/media/patriots.18592604.png": "/static/media/patriots.18592604.png",
     "static/media/portfolio-bg.2fd9a43e.png": "/static/media/portfolio-bg.2fd9a43e.png",
-    "static/media/rice-n-fire.4657060a.png": "/static/media/rice-n-fire.4657060a.png",
-    "static/media/to-do-list.7f7076ab.png": "/static/media/to-do-list.7f7076ab.png"
+    "static/media/rice-n-fire.da991f44.png": "/static/media/rice-n-fire.da991f44.png",
+    "static/media/to-do-list.e6c19c9a.png": "/static/media/to-do-list.e6c19c9a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bf3f89e5.js",
     "static/js/2.ecb3139d.chunk.js",
-    "static/js/main.08aa39ad.chunk.js"
+    "static/js/main.0c7e36fc.chunk.js"
   ]
 }
