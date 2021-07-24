@@ -18,7 +18,7 @@ const Container = styled.div`
   animation: ${slideUp} 3.2s ease;
   min-width: 320px;
   @media (min-width: 1000px) {
-    width: 40%;
+    width: 45%;
   }
 `;
 

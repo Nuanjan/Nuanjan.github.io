@@ -14,7 +14,7 @@ export const ProjectCardContainer = styled.div`
   -o-box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   @media (min-width: 500px) {
     max-width: 400px;
-    margin: 20px;
+    margin: 50px;
     width: 80%;
   }
 `;
