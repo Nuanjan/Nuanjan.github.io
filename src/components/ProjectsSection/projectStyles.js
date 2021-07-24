@@ -28,7 +28,7 @@ export const ProjectInformation = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  min-height: 290px;
+  min-height: 300px;
   justify-content: space-between;
 `;
 export const ProjectContentContainer = styled.div`

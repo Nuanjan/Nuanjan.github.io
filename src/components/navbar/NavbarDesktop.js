@@ -75,7 +75,7 @@ const NavbarDesktop = ({ open, setOpen }) => {
             setOpen(false);
           }}
         >
-          HOME
+          ABOUT ME
         </a>
       </Link>
       <a
