@@ -19,8 +19,8 @@ export const projectData = [
     imgUrl: patriotsImg,
     technologies: "React, Firebase, MUI, React-reveal",
     detail:
-      "This is my front end project that I learn from React practice course, learn by practice on Udemy course. This purpose of application is to show the Football match and the players on Patriots team, which is my husband(Roy) favorite team." +
-      " The admin of this application is my husband, but unaothorized users still can see the landing page.",
+      "Cloned project from React practice course,Udemy course. This application is to show the Football match and Patriots players." +
+      "  My husband is an admin, but unaothorized users still can see the landing page.",
     appLink: "https://patriot-827d1.web.app/",
     ghFrontEndLink: "https://github.com/Nuanjan/patriots",
     ghBackEndLink: "",
