@@ -65,6 +65,9 @@ const ParentBtn = styled.button`
   border: 2px solid #d3dae4;
   border-radius: 30px;
   cursor: pointer;
+  box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
+  -moz-box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
+  -webkit-box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
 `;
 
 export const InheriteBtn = styled(ParentBtn)`

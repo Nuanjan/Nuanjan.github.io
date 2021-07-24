@@ -17,7 +17,15 @@ import {
 const ProjectCard = (props) => {
   return (
     <ProjectCardContainer>
-      <ProjectImage src={props.project.imgUrl} />
+      <a
+        href={props.project.appLink}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="link to my project demo"
+        style={{ textDecoration: "none" }}
+      >
+        <ProjectImage src={props.project.imgUrl} />
+      </a>
       <ProjectInformation>
         <ProjectContentContainer>
           <ProjectName>{props.project.projectName}</ProjectName>
