@@ -65,9 +65,9 @@ const ParentBtn = styled.button`
   border: 2px solid #d3dae4;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
-  -moz-box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
-  -webkit-box-shadow: inset 2px 2px 5px grey, 8px 8px 10px black;
+  box-shadow: inset 2px 2px 8px grey, 8px 8px 12px black;
+  -moz-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px black;
+  -webkit-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px black;
 `;
 
 export const InheriteBtn = styled(ParentBtn)`
@@ -82,7 +82,14 @@ export const InheriteBtn = styled(ParentBtn)`
   align-items: center;
   &:hover {
     background-position: 0;
+    transform: translateY(-3px);
     color: #afc0c9;
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
+    -moz-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
+    -webkit-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
   }
 `;
 

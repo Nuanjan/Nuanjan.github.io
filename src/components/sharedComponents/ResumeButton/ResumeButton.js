@@ -46,6 +46,10 @@ const ResumeLink = styled.a`
   &:hover{
     transform: scale(1.1);
   }
+  &:active{
+    box-shadow: 8px 7px 10px #242526;
+    transform: scale(0.9);
+  }
   @medai(min-width: 1000px) {
     margin-bottom: 20px;
   }

@@ -4,9 +4,11 @@ import styled, { keyframes } from "styled-components";
 const slideUp = keyframes`
 0%{
   transform: translateY(100%);
+  opacity:0;
 }
 100%{
   transform: translateY(0);
+  opacity:1;
 }
 `;
 
@@ -15,7 +17,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: ${slideUp} 3.2s ease;
+  animation: ${slideUp} 2s ease;
   min-width: 320px;
   @media (min-width: 1000px) {
     width: 45%;

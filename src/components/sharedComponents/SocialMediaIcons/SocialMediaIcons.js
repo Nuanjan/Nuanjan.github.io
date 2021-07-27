@@ -40,7 +40,6 @@ const SocialMediaIcons = () => {
         aria-label="my github profile link"
       >
         <SocialMediaIcon>
-          {" "}
           <TiSocialGithubCircular size="60px" color={colors.socialLink} />
         </SocialMediaIcon>
       </a>

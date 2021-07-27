@@ -15,8 +15,10 @@ export const SocialMediaIcon = styled.div`
   margin: 30px auto;
 
   &: hover {
-    // background-color: ${colors.lightGray};
-    border: solid 3px ${colors.lightGray};
-    //box-shadow: 5px 10px 15px grey;
+    border: solid 5px ${colors.lightGray};
+  }
+  &: active {
+    border: solid 0 ${colors.lightGray};
+    background-color: ${colors.lightGray};
   }
 `;
