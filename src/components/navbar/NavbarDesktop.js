@@ -79,7 +79,7 @@ const NavbarDesktop = ({ open, setOpen }) => {
         </a>
       </Link>
       <a
-        href="https://drive.google.com/file/d/1OyPQ-j7_ZNfk0PrmNztGEYQa88IftmBy/view?usp=sharing"
+        href="https://drive.google.com/file/d/120cHw0U6NxWL4ivpcQBKbZIrd1GXHqyT/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         onClick={() => setOpen(false)}
