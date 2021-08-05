@@ -24,7 +24,7 @@ const SocialMediaIcons = () => {
         </SocialMediaIcon>
       </a>
       <a
-        href="https://www.linkedin.com/in/nuanjan-schluntz/"
+        href="https://www.linkedin.com/in/noon-schluntz/"
         target="_blank"
         rel="noreferrer"
         aria-label="my linkedin profile link"
