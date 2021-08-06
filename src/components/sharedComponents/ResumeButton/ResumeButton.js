@@ -59,7 +59,7 @@ const ResumeButton = () => {
   return (
     <LinkContainer>
       <ResumeLink
-        href="https://drive.google.com/file/d/120cHw0U6NxWL4ivpcQBKbZIrd1GXHqyT/view?usp=sharing"
+        href="https://docs.google.com/document/d/14K25CNIkuaYqbpzEYuxf3B4VUadUb0hr/edit?usp=sharing&ouid=115502355986075599382&rtpof=true&sd=true"
         target="_blank"
       >
         RESUME
