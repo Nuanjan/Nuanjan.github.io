@@ -8,7 +8,7 @@ export const projectData = [
   {
     projectName: "Rice N Fire",
     imgUrl: riceNFireImg,
-    technologies: "React, Bootstrap, MUI, firebase.",
+    technologies: "React, Bootstrap, firebase.",
     detail:
       "Indigo Award Winner 2021 in Restaurant/Cafe category as well as Mobile Responsive category. Worked across with marketing, design and developer team. Worked with agile principle to developed the project.",
     appLink: "https://ricenfire.com/",
@@ -18,7 +18,7 @@ export const projectData = [
   {
     projectName: "Thai Tai Eatery",
     imgUrl: thaiTaiEatery,
-    technologies: "React, Bootstrap, MUI, firebase.",
+    technologies: "React, Bootstrap, firebase.",
     detail:
       "The client wants our team to create unique and stunning web application for Thai Tai Eatery restaurant, This is my first real client project.",
     appLink: "https://thaitaieatery.com/",
