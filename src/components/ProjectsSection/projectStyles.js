@@ -65,9 +65,9 @@ const ParentBtn = styled.button`
   border: 2px solid #d3dae4;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: inset 2px 2px 8px grey, 8px 8px 12px black;
-  -moz-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px black;
-  -webkit-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px black;
+  box-shadow: inset 2px 2px 8px grey, 8px 8px 12px #3a3b3c;
+  -moz-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px #3a3b3c;
+  -webkit-box-shadow: inset 2px 2px 5px grey, 8px 8px 12px #3a3b3c;
 `;
 
 export const InheriteBtn = styled(ParentBtn)`
@@ -87,9 +87,9 @@ export const InheriteBtn = styled(ParentBtn)`
   }
   &:active {
     transform: translateY(-1px);
-    box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
-    -moz-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
-    -webkit-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px black;
+    box-shadow: inset 2px 2px 2px grey, 5px 5px 5px #3a3b3c;
+    -moz-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px #3a3b3c;
+    -webkit-box-shadow: inset 2px 2px 2px grey, 5px 5px 5px #3a3b3c;
   }
 `;
 

@@ -2,6 +2,7 @@ import patriotsImg from "./../../images/patriots.png";
 import activityHubImg from "./../../images/activity-hub.png";
 import riceNFireImg from "./../../images/rice-n-fire.png";
 import todaList from "./../../images/to-do-list.png";
+import thaiTaiEatery from "./../../images/thai-tai-eatery.png";
 
 export const projectData = [
   {
@@ -11,6 +12,16 @@ export const projectData = [
     detail:
       "Indigo Award Winner 2021 in Restaurant/Cafe category as well as Mobile Responsive category. Worked across with marketing, design and developer team. Worked with agile principle to developed the project.",
     appLink: "https://ricenfire.com/",
+    ghbackEndLink: "",
+    ghFrontendLink: "",
+  },
+  {
+    projectName: "Thai Tai Eatery",
+    imgUrl: thaiTaiEatery,
+    technologies: "React, Bootstrap, MUI, firebase.",
+    detail:
+      "The client wants our team to create unique and stunning web application for Thai Tai Eatery restaurant, This is my first real client project.",
+    appLink: "https://thaitaieatery.com/",
     ghbackEndLink: "",
     ghFrontendLink: "",
   },
