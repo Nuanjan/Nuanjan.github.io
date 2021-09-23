@@ -77,7 +77,7 @@
     
 <!-- viewd profile -->  
 <p align="center" >   
- <img src=https://komarev.com/ghpvc/?username=your-github-nuanjan&color=green" alt="viewed profile">
+ <img src="https://komarev.com/ghpvc/?username=your-github-nuanjan&color=green" alt="viewed profile">
 </p>
   
   <br>
