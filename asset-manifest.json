@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.64381a1f.chunk.js",
-    "main.js.map": "/static/js/main.64381a1f.chunk.js.map",
+    "main.js": "/static/js/main.229a567c.chunk.js",
+    "main.js.map": "/static/js/main.229a567c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf3f89e5.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf3f89e5.js.map",
     "static/js/2.ecb3139d.chunk.js": "/static/js/2.ecb3139d.chunk.js",
     "static/js/2.ecb3139d.chunk.js.map": "/static/js/2.ecb3139d.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.ecb3139d.chunk.js.LICENSE.txt": "/static/js/2.ecb3139d.chunk.js.LICENSE.txt",
-    "static/media/activity-hub.89d0d4c8.png": "/static/media/activity-hub.89d0d4c8.png",
     "static/media/patriots.18592604.png": "/static/media/patriots.18592604.png",
     "static/media/portfolio-bg.2fd9a43e.png": "/static/media/portfolio-bg.2fd9a43e.png",
+    "static/media/pug-venue.184b291e.png": "/static/media/pug-venue.184b291e.png",
     "static/media/rice-n-fire.da991f44.png": "/static/media/rice-n-fire.da991f44.png",
     "static/media/thai-tai-eatery.c836323f.png": "/static/media/thai-tai-eatery.c836323f.png",
     "static/media/to-do-list.18115184.png": "/static/media/to-do-list.18115184.png"
@@ -18,6 +18,6 @@
   "entrypoints": [
     "static/js/runtime-main.bf3f89e5.js",
     "static/js/2.ecb3139d.chunk.js",
-    "static/js/main.64381a1f.chunk.js"
+    "static/js/main.229a567c.chunk.js"
   ]
 }
