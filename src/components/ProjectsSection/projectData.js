@@ -1,5 +1,5 @@
 import patriotsImg from "./../../images/patriots.png";
-import activityHubImg from "./../../images/activity-hub.png";
+import activityHubImg from "./../../images/pug-venue.png";
 import riceNFireImg from "./../../images/rice-n-fire.png";
 import todaList from "./../../images/to-do-list.png";
 import thaiTaiEatery from "./../../images/thai-tai-eatery.png";
@@ -37,13 +37,13 @@ export const projectData = [
     ghBackEndLink: "",
   },
   {
-    projectName: "ActivityHub",
+    projectName: "Pug Venue",
     imgUrl: activityHubImg,
-    technologies: "React, Firebase, Twilio API",
+    technologies: "React, React-reveal",
     detail:
-      "ActivityHub is a General Assemly holiday Hackathon project. Client can connect with people who like the same activity during pandemic by create the meet up room base on activity categories",
-    appLink: "https://video-activity-hub.herokuapp.com/",
-    ghFrontEndLink: "https://github.com/ActivityHub/video-activity-hub",
+      "Pug Venue is the static React single page application that integrates with React reveal React libraly to make application look alive! ",
+    appLink: "https://nuanjan.github.io/pug_venue/",
+    ghFrontEndLink: "https://github.com/Nuanjan/pug_venue",
     ghBackEndLink: "",
   },
   {
